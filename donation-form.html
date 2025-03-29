@@ -1,0 +1,3100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.krishnayangauraksha.org/donation-form.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Mar 2025 02:15:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Donation Form</title>
+        <meta name="description" content="Donation Form">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <meta name="google" content="notranslate" />
+    <!-- Donation page css -->
+            <link href="assets/vendors/select2/select2.min.css" rel="stylesheet">
+        <link href="assets/vendors/fancybox-5/fancybox.css" rel="stylesheet">
+
+        <link href="new-assets/css/newstyle.min.css" rel="stylesheet" />
+    <link href="new-assets/css/fontAwesome6Pro.css" rel="stylesheet" />
+    <!-- <link href="https://www.krishnayangauraksha.org/assets/css/style.css" rel="stylesheet" /> -->
+    <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="new-assets/vendors/iti/css/intlTelInput.min.css" rel="stylesheet">
+    <meta name="google-site-verification" content="YrA75nfnjE5jxu2k3I_zbTbK6txnd4lsn7-hpSpApUw" />
+    <meta name="robots" content="index" />
+        <link rel="canonical" href="donation-form.html" />
+    <!-- given by subrat -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "NGO",
+            "name": "Krishnayan Gauraksha",
+            "url": "https://www.krishnayangauraksha.org",
+            "logo": "https://www.krishnayangauraksha.org/new-assets/images/logo1.webp",
+            "sameAs": [
+                "https://www.facebook.com/krishnayangauraksha/",
+                "https://www.instagram.com/krishnayangauraksha/",
+                "https://www.youtube.com/@KrishnayanGauraksha",
+                "https://twitter.com/ShreeDesi"
+            ]
+        }
+    </script>
+    <!-- Brajesh sir request 31-March 2023 -->
+    <script src="../cdn.onesignal.com/sdks/OneSignalSDK.js" defer></script>
+    <script src="https://accounts.google.com/gsi/client" defer></script>
+
+    <script type="text/javascript">
+        function downloadJSAtOnload() {
+            var element = document.createElement("script");
+            element.src = "new-assets/js/deferscripts.js";
+            document.body.appendChild(element);
+        }
+        if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;
+    </script>
+    
+<style>
+    .loader-box{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0, .4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+</head>
+
+<body class="cartbg " style=";">
+
+        <!-- Google Tag Manager (noscript) Given by SONU JI -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8G95S" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMKLQ9KN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- <div class="preloader">
+        <div id="handle-preloader" class="handle-preloader">
+            <div class="animation-preloader">
+                <div class="spinnerr"> 
+                    <img src="https://docs.krishnayangauraksha.org/images/logo-left.jpg"
+                        alt="Krishnayan Gauraksha Logo" class="img-fluid"> 
+                        <div class="txt-loading">Krishnayan</div>
+                     </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="modal fade" id="loginpopup" tabindex="-1" aria-labelledby="loginpopup" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable  ">
+        <div class="modal-content mymd overflow-visible rounded-md-4 bg-primary-5">
+            <div class="modal-header text-center border-0 pb-0 ">
+                <h5 class=" mb-0  mt-1 text-center mx-auto"><span class=" w-100 d-block fs-4 fw-semibold"> Are you
+                        already registered?</span>
+                    <span class="text-grey mt-2 d-block fw-normal  fs-6">Sign
+                        in to fetch details</span>
+                </h5>
+                <button type="button" class="btn-close btn-close2 btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-md-4">
+                <form id="donation-form" class=" mt-2" autocomplete="on">
+                    <div class="row gy-4">
+                        <div class="col-md-12"> <span id="invalid_user" style="color: red;"> </span>
+                            <div class="form-floating">
+                                <input type="text" id="loginmobileno" name="mobileno"
+                                    placeholder="Enter Mobile Number here" value="" class="form-control myinput" />
+                                <label class="text">Mobile Number/Email ID *</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <input type="password" id="password" name="password" placeholder="Enter Password here"
+                                    value="" class="form-control myinput" />
+                                <label class="text">Password *</label>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-12 text-end my-2">
+                            <a href="https://gwala.krishnayangauraksha.org/Donor/Forgotpassword" target="_blank">Forgot
+                                password ?</a>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <input class="btn btn-primary text-white w-100 rounded-pill py-2" type="button"
+                                    value="Submit" id="simple_login" onclick="loginfunction(); return false;" />
+                                <br>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+
+                <div class="mt-4 text-center w-100 opacity-50 position-relative"><span
+                        class="centerline fs-14">Or</span> </div>
+
+                <button onclick="login_page_sesssion();"
+                    class="btn btn-outline-secondary w-100 rounded-pill py-2 mt-4 mb-3">
+                    <span>You Can Login With </span>
+                    <img src="assets/images/google.svg" class="me-1" width="24" height="24"
+                        alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="listpopup" tabindex="-1" aria-labelledby="listpopup" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" style="max-width: 500px;">
+        <div class="modal-content mymd">
+            <div class="modal-header">
+                <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-12" id="usersList"> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+/** Login through gwala credentials */
+
+function loginfunction() {
+
+    var loginmobileno = document.getElementById("loginmobileno").value;
+    var password = document.getElementById("password").value;
+    if (loginmobileno == "" && password == "") {
+            }
+    if (loginmobileno == "") {
+        alert("Please Enter Mobile Number.");
+        document.getElementById('loginmobileno').focus();
+        return false;
+    }
+    if (password == "") {
+        alert("Please Enter Password.");
+        document.getElementById('password').focus();
+        return false;
+    }
+    $.ajax({
+        url: "https://www.krishnayangauraksha.org/gwala_login_withMob.html",
+        type: 'POST',
+        dataType: 'json',
+        data: {
+            "csrf_test_name":'507e97488e64af4e612d278199781768',
+            "mobileno": loginmobileno,
+            "password": password
+        },
+        beforeSend: function() {
+            $("#simple_login").val("Please Wait...").prop("disabled", true);
+        },
+        success: function(json) {
+            console.log(json);
+            $("#simple_login").val("Submit").prop("disabled", false);
+
+            if (json != '' && json[0]['status'] != '0') {
+                $('#usersList').empty();
+                $.each(json, function(i) {
+                    var aa = '"';
+                    var bb = '"';
+                    $("#usersList").append("<p class='list_design'><b>Name:</b> " + json[i][
+                            'firstname'
+                        ] + ' ' + json[i]['lastname'] + "<br/> <b>Contact:</b> " + json[i][
+                            'mobileno'
+                        ] + "<br/> <b>Email:</b> " + json[i]['email'] + " <br/> <b>ID:</b> " +
+                        json[i]['userid'] + " <a onclick='proceedFunction(" + aa + json[i][
+                            'userid'
+                        ] + bb +
+                        ");' class='btn btn-success' style='float: right'>Proceed</a></p>");
+                });
+                $("#listpopup").modal('show');
+                $("#loginpopup").modal('hide');
+            } else {
+                document.getElementById('invalid_user').innerHTML =
+                    "Invalid Mobile Number/Email OR Password";
+                return false;
+            }
+        },
+        error: function(json) {
+            document.getElementById('invalid_user').innerHTML =
+                "Something went wrong! Please try again later";
+            $("#simple_login").val("Submit").prop("disabled", false);
+            return false;
+        }
+    });
+}
+var login_state_field = '';
+
+function proceedFunction(userID) {
+    $.ajax({
+        url: "https://www.krishnayangauraksha.org/Login_List_Proceed",
+        type: 'POST',
+        dataType: 'json',
+        data: {
+            "csrf_test_name":'507e97488e64af4e612d278199781768',
+            "userID": userID
+        },
+        success: function(json) {
+            console.log(json);
+            if (json == 2) {
+                $("#listpopup").modal('hide');
+                alert('Something went wrong! Please fill form.');
+            } else {
+                location.reload();
+                $('#Pincode_s').trigger('input');
+                $("#listpopup").modal('hide');
+            }
+        }
+    });
+}
+
+function switch_account_list() {
+    $('#usersList').empty();
+        $("#usersList").append("<p class='list_design'>No Data</p>");
+        $("#listpopup").modal('show');
+}
+</script>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="menucanvas">
+    <div class="offcanvas-header bg-primary py-2">
+        <a href="index.html" class="offcanvas-title text-white "> <img
+                src="new-assets/images/logo1.html" class="me-2" width="50"
+                alt="">Shree Krishnayan Gaushala</a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="menu-list">
+            <ul id="menu-content" class="menu-content accordion">
+                <li class=''> <a href='https://gwala.krishnayangauraksha.org/'><i class='fa-regular fa-house'></i>Dashboard</a></li><li class=''> <a href='about-us.html'><i class='fa-regular fa-book'></i>About Us</a></li><li class=''> <a href='https://gwala.krishnayangauraksha.org/Donor/MyProfile'><i class='fa-regular fa-user'></i>My Profile</a></li><li class=''> <a class='collapsed accordion-button' data-bs-target='#abc36' data-bs-toggle='collapse' aria-expanded='false'><i class='fa-regular fa-hand-holding-dollar'></i>My Donation</a><ul class='accordion-collapse collapse' data-bs-parent='#menu-content' id='abc36' ><li class=''> <a href='https://gwala.krishnayangauraksha.org/Donor/MyPayment'><i class=' '></i>My Payments</a></li><li class=''> <a href='https://gwala.krishnayangauraksha.org/Donor/MyECSRequest'><i class=''></i>My Monthly Donation</a></li><li class=''> <a href='https://gwala.krishnayangauraksha.org/Donor/ConsolidateReport'><i class=''></i>Consolidated Receipts</a></li></li></ul><li class=''> <a class='collapsed accordion-button' data-bs-target='#abc9' data-bs-toggle='collapse' aria-expanded='false'><i class='fa-regular fa-hands-holding-dollar'></i>Donation - Book Your Sewa</a><ul class='accordion-collapse collapse' data-bs-parent='#menu-content' id='abc9' ><li class=''> <a href='godaan.html'><i class=''></i>Service To Mother Cow</a></li><li class=''> <a href='adopt-a-cow.html'><i class=''></i>Adopt a Cow</a></li><li class=''> <a href='gaugrass.html'><i class=''></i>Feed Mother Cow</a></li><li class=''> <a href='medical-help.html'><i class=''></i>Medical Emergency</a></li><li class=''> <a href='food-distribution.html'><i class=''></i>Food For Under Privileged</a></li><li class=''> <a href='shradh.html'><i class=''></i>Shradh For Departed Souls</a></li><li class=''> <a href='vedic-celebration.html'><i class=''></i>Celebrate Your Birthday/ Anniversary/ Event</a></li><li class=''> <a href='event.html'><i class=''></i>Yagya/ Pooja/ Food Distribution</a></li></li></ul><li class=''> <a class='collapsed accordion-button' data-bs-target='#abc45' data-bs-toggle='collapse' aria-expanded='false'><i class='icon-cow'></i>Adopt A Gauvansh</a><ul class='accordion-collapse collapse' data-bs-parent='#menu-content' id='abc45' ><li class=''> <a href='https://gwala.krishnayangauraksha.org/Donor/GauvanshAdoption'><i class=''></i>Adopt A Gauvansh</a></li><li class=''> <a href='https://gwala.krishnayangauraksha.org/Donor/GauvanshAdoptionReport'><i class=''></i>My Adopted Cow</a></li><li class=''> <a href='https://gwala.krishnayangauraksha.org/Donor/ExtraActivity'><i class=''></i>Extra Activity</a></li></li></ul><li class=''> <a href='https://gwala.krishnayangauraksha.org/Donor/FamilyCelebrations'><i class='fa-regular fa-calendar-star'></i>Celebrate Event</a></li><li class=''> <a href='csr.html'><i class='fa-regular fa-handshake-angle'></i>CSR</a></li><li class=''> <a href='https://gwala.krishnayangauraksha.org/Donor/MyReferences_'><i class='fa-regular fa-users'></i>My References</a></li><li class=''> <a href='https://gwala.krishnayangauraksha.org/Donor/Feedback'><i class='fa-regular fa-message-exclamation'></i>Raise Concern</a></li><li class=''> <a href='our-activities.html'><i class='fa-regular fa-chart-network'></i>Our Activities</a></li><li class=''> <a class='collapsed accordion-button' data-bs-target='#abc54' data-bs-toggle='collapse' aria-expanded='false'><i class='fa-regular fa-newspaper'></i>Communication</a><ul class='accordion-collapse collapse' data-bs-parent='#menu-content' id='abc54' ><li class=''> <a href='Newsletter.html'><i class=''></i>Newsletter</a></li><li class=''> <a href='blog.html'><i class=''></i>Blog</a></li><li class=''> <a href='news.html'><i class=''></i>Latest News & Updates</a></li></li></ul><li class=''> <a class='collapsed accordion-button' data-bs-target='#abc55' data-bs-toggle='collapse' aria-expanded='false'><i class='fa-regular fa-chart-network'></i>Our Activites</a><ul class='accordion-collapse collapse' data-bs-parent='#menu-content' id='abc55' ><li class=''> <a href='downloads.html'><i class=''></i>Downloads</a></li><li class=''> <a href='benefits-of-cow.html'><i class=''></i>Benefits of Cow</a></li></li></ul><li class=''> <a href='contact-us.html'><i class='fa-regular fa-comment-exclamation'></i>Contact Us</a></li><li class=''> <a href='gallery.html'><i class='fa-regular fa-images-user'></i>Gallery</a></li><li class=''> <a href='faq.html'><i class='fa-regular fa-circle-question'></i>FAQ's</a></li>            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="header-1" style=";">
+                    <div role="button" class="menu-btn btn btn-warning rounded-pill px-3 brd" data-bs-toggle="offcanvas"
+                        data-bs-target="#menucanvas">
+                        <span class="d-none d-lg-flex align-items-center gap-1"> <i
+                                class="fa-solid fa-bars-sort me-2"></i> Menu </span>
+                        <span class="d-lg-none"> <img src="new-assets/images/user-menu2.svg"
+                                width="50" class="me-1 m-logo" alt=""> </span>
+                    </div>
+                    
+                                        <a href="https://gwala.krishnayangauraksha.org/Donor/Panchang"
+                        class="text-nowrap short-panchang rounded-0 d-none d-lg-flex">
+                        <div class="monthdate">
+                            <h6>Chaitra, <br>Krishna Chaturdashi</h6>
+                        </div>
+                        <div class="festival-name">
+                            Masik Shivaratri                        </div>
+                    </a>
+
+                    <img src="new-assets/images/logo-orange.png"
+                        class="img-fluid px-2 kri-logo mx-auto d-lg-none" width="164" height="44" alt="Krishnayan Brand Logo">
+
+
+                    <ul class="d-flex align-items-center  gap-lg-2 wmm-100">
+
+                        <li class="d-none d-lg-flex align-items-center gap-2 ms-lg-auto">
+
+                            <i class="fa-solid fa-headset fa-2x text-white opacity-75"></i>
+                            <div class="">
+                                <a href="mailto:care@krishnayangauraksha.org"
+                                    class="text-white small d-block">care@krishnayangauraksha.org</a>
+                                <a href="tel:+918755955000" class="text-white small d-block"> +91 8755955000 </a>
+                            </div>
+
+
+
+                        </li>
+
+
+                        <li class="search-header-btn flex-grow-1 d-none " role="button" onclick="window.location.href='https://gwala.krishnayangauraksha.org/';">
+                        <span class="d-none d-lg-inline"> Search</span> <i class="fa-regular fa-magnifying-glass ms-lg-auto"></i>
+                        </li>
+
+
+                        <li class="lang-drop d-none">
+                            <div class="dropdown">
+                                <button class="btn btn-primary  text-start d-flex flex-column" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <span class="fs-12 text-white">Language</span>
+                                    <input type="hidden" value="English"
+                                        id="addtheir_input">
+                                    <div class="dropdown-toggle text-white addtheir"><i
+                                            class="fa-solid fa-globe"></i>English</div>
+
+                                </button>
+
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <ul>
+                                        <li><a id="GL_as" href="#"
+                                                onclick="googleTranslateElementInit('as')">Assamese</a></li>
+                                        <li><a id="GL_bn" href="#"
+                                                onclick="googleTranslateElementInit('bn')">Bengali</a></li>
+                                        <li><a id="GL_gu" href="#"
+                                                onclick="googleTranslateElementInit('gu')">Gujarati</a></li>
+                                        <li><a id="GL_en" href="#"
+                                                onclick="googleTranslateElementInit('en')">English</a></li>
+                                        <li><a id="GL_hi" href="#" onclick="googleTranslateElementInit('hi')">Hindi</a>
+                                        </li>
+                                        <li><a id="GL_kn" href="#"
+                                                onclick="googleTranslateElementInit('kn')">Kannada</a></li>
+                                        <li><a id="GL_ml" href="#"
+                                                onclick="googleTranslateElementInit('ml')">Malayalam</a></li>
+                                        <li><a id="GL_mr" href="#"
+                                                onclick="googleTranslateElementInit('mr')">Marathi</a></li>
+                                        <li><a id="GL_or" href="#" onclick="googleTranslateElementInit('or')">Odia</a>
+                                        </li>
+                                        <li><a id="GL_ta" href="#" onclick="googleTranslateElementInit('ta')">Tamil</a>
+                                        </li>
+                                        <li><a id="GL_te" href="#" onclick="googleTranslateElementInit('te')">Telugu</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="d-none d-lg-block">
+
+
+                            <div class="language-dropdown dropdown-center d-none d-lg-block">
+                                <div class="dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <div class="d-flex align-items-center gap-1 dropdown-el"
+                                        id="google_translate_element"><i class="fa-sharp fa-solid fa-globe"></i> </div>
+                                </div>
+
+
+
+                            </div>
+                            <div id="selected-language"></div>
+                        </li>
+
+
+                        
+
+
+
+                        
+
+                        <li class="">
+                            <a data-bs-toggle="modal" data-bs-target="#loginpopup"
+                                class="btn text-m-15 px-3 btn-warning rounded-pill ">
+                                <i class="fa-solid fa-user-lock me-lg-1"></i> <span class="d-lg-inline d-none">Login</span>
+                            </a>
+
+                        </li>
+                        
+
+
+                    </ul>
+
+                </div>
+
+<header class="w-100">
+    <div class="container-fluid">
+        <div class="row gy-3">        
+            <div class="col-lg-12 d-none d-lg-block">
+                <div class="header-2">
+                    <!-- <span class="onediya position-absolute"><img src="https://www.krishnayangauraksha.org/assets/images/diya.gif" alt=""></span>
+		        <span class="twodiya position-absolute"><img src="https://www.krishnayangauraksha.org/assets/images/diya.gif" alt=""></span> -->
+                    <div class="header-panel">
+                        <a href="index.html">
+                            <img src="new-assets/images/logo1.html"
+                                height="108" width="108" alt="Krishnayan Logo">
+                        </a>
+                    </div>
+                    <div class="header-panel text-center">
+                        <img src="new-assets/images/logo2.html" height="108"
+                            alt="Krishnayan Brand Logo" weight="108" class="mx-auto">
+                    </div>
+                    <div class="header-panel">
+                                                <img src="../docs.krishnayangauraksha.org/celebration/assets/images/logo3.png" height="150"
+                            alt="" class="ms-auto d-block">
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="container-fluid">
+        <div class="row"><link rel="stylesheet"
+    href="../cdn.jsdelivr.net/npm/select2-bootstrap-5-theme%401.3.0/dist/select2-bootstrap-5-theme.min.css" />
+<link rel="stylesheet" href="../code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+<!-- Razor Pay QR Code Modal -->
+<div id="qrcodeimage" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Scan this QR code to payment.</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-header"> <a href="#" download id="qr_code_anchor">Download QR Code</a> </div>
+            <div class="modal-body"> <img src="#" id="qr_code_img" class="img-fluid"> </div>
+        </div>
+    </div>
+</div>
+<!-- Razor Pay QR Code Modal  End-->
+
+<!-- Razor Pay QR Code Modal -->
+<div id="smart_collect_modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content rounded-5 p-md-3">
+            <div class="modal-header py-md-0 border-0 pb-0">
+                <h5 class="modal-title">You can make NEFT / RTGS / IMPS payment to the following account number</h5>
+                <button type="button" class="btn-close newmodalclose" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body pb-2">
+                <ul class="banktranlist">
+                    <li><strong>Beneficiary Name : </strong><span id="va_beneficiary_name"></span> <i
+                            class="fa fa-copy ms-2 copyTextIcon"></i> </li>
+                    <li><strong>IFSC Code : </strong><span id="va_ifsc"></span> <i
+                            class="fa fa-copy ms-2 copyTextIcon"></i> </li>
+                    <li><strong>Account Number : </strong><span id="va_accountNumber"></span> <i
+                            class="fa fa-copy ms-2 copyTextIcon"></i> </li>
+                    <li><strong>Bank Name : </strong><span>RBL Bank</span> <i class="fa fa-copy ms-2 copyTextIcon"></i>
+                    </li>
+                </ul>
+                <div class="termscondition">
+                    <ul>
+                        <li>This account number is valid only for you</li>
+                        <li>If there is no transaction in the account for consecutive 90 days, then it will be closed.
+                        </li>
+                        <li>Any donations made after the account is closed will automatically be refunded.</li>
+                        <li class="mb-0">You will automatically receive your receipts in your mail / WhatsApp after
+                            payment is credited to the above account number.</li>
+                    </ul>
+                </div>
+                <div class='text-center mt-4'>
+                    <form method="post" action="https://www.krishnayangauraksha.org/smart-collect">
+                        <input type="hidden" value="" name="va_email" id="va_email">
+                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Back to Donation
+                            Page</button>
+                        <button type="submit" class="btn btn-primary text-white">Confirm Payment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Razor Pay QR Code Modal  End-->
+
+<div class="col-lg-12 mt-1 px-0">
+        <form id="user-donation-form" name="user-donation-form" method="post" action="https://www.krishnayangauraksha.org/donate.html">
+        
+    <input type="hidden" name="csrf_test_name" value="507e97488e64af4e612d278199781768">
+        <div class="container mt-4 ekartform">
+            <div class="row gy-4 justify-content-center align-items-center flex-column">
+                <div class="col-12 d-md-none hidemonthlymsg">
+                    <div class="rounded-15  d-center aam mt-2">
+                        <p class="mb-0 fs-13 text-center">Monthly Payment Saves Life of Gauvansh in Need</p>
+                    </div>
+                    <div class="mobile-arrow-down">
+                        <lottie-player src="assets/images/arrow-down.json"
+                            background="transparent.html" speed="1" loop autoplay></lottie-player>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-md-block">
+                    <input type="hidden" name="data[count_gwala_cow]" id="count_gwalacow" value="">
+                    <input type="hidden" name="data[utm_source]" id="utm_source"
+                        value="">
+                    <input type="hidden" name="data[utm_medium]" id="utm_medium"
+                        value="">
+                    <input type="hidden" name="data[utm_campaign]" id="utm_campaign"
+                        value="">
+                    <input type="hidden" name="data[utm_id]" id="utm_id" value="">
+                    <input type="hidden" name="data[utm_term]" id="utm_term"
+                        value="">
+                    <input type="hidden" name="surl" id="surl" value="donation-form.html">
+                    <input type="hidden" name="furl" id="furl" value="donation-form.html">
+                    <input type="hidden" name="data[dtype_page]" value=" ">
+                    <input type="hidden" id="schedule_date" name="data[schedule_date]"
+                        value="" />
+                    <input type="hidden" id="scheduled_id" name="data[scheduled_id]"
+                        value="" />
+                    <input type="hidden" id="contact_id" name="data[contact_id]" value="" />
+                    <input type="hidden" id="donorid" name="data[donorid]" value="" />
+                    <!-- this below input for direct UPI and Bank Transfer gateway -->
+                    <input type="hidden" id="direct_payment_method" name="data[direct_payment_method]"
+                        value="" />
+                    <div class="setloginleft">
+                        <div class="d-none d-md-block">
+                            <div class="d-flex align-items-center"> <i
+                                    class="d-block me-3 small">Login to
+                                    Fill Details </i>
+                                <div class="d-flex socialhref"> <a href="#" data-bs-toggle="modal"
+                                        data-bs-target="#loginpopup">
+                                        <img src="assets/images/rightloginicon.svg" alt=""></a>
+                                    <a href="https://accounts.google.com/o/oauth2/v2/auth?response_type=code&amp;access_type=online&amp;client_id=936841096520-qjcj3i13u3205qc5631ipej73pc7tpvs.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fwww.krishnayangauraksha.org%2Fdonation-form.html&amp;state&amp;scope=email%20profile&amp;approval_prompt=auto"><img src="assets/images/google.svg" /></a>                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative">
+                    <ul class="paymenttabs w-100">
+                                                <li class="active onetimedonation"
+                            onclick="onetimedonation();"> <span class="check-icon">
+                                <img src="assets/images/check-square-regular.svg" width="20"
+                                    alt="check icon">
+                            </span> <span class="fw-medium"> One Time <span class="d-none d-lg-inline-block"> Payment
+                                </span> </span> </li>
+                                                    
+                        <li onclick="monthlydonation();"
+                            class="monthlydonation ">
+                            <span class="check-icon"><img
+                                    src="assets/images/check-square-regular.svg" width="20"
+                                    alt="check icon"> </span><span class="fw-medium">Monthly
+                                <span class="d-none d-lg-inline-block"> Payment</span> </span>
+                        </li>
+                                                <li class="animatedarrow d-none d-md-block">
+                            <div class="animated-arrow">
+                                <lottie-player src="assets/images/monthlydonate.json"
+                                    background="transparent.html" speed="1" loop autoplay></lottie-player>
+                            </div>
+                        </li>
+                        <input type="hidden" name="data[form_type]" value="1" id="donation_type">
+                    </ul>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="py-1 bg-white column-gap-3 rounded-4 d-center d-md-none"> <span
+                            class="d-block  mb-1 ">Login to fill details</span>
+                        <div class="d-flex socialhref"> <a href="#" data-bs-toggle="modal" data-bs-target="#loginpopup">
+                                <img src="assets/images/rightloginicon.svg"></a>
+                            <a href="https://accounts.google.com/o/oauth2/v2/auth?response_type=code&amp;access_type=online&amp;client_id=936841096520-qjcj3i13u3205qc5631ipej73pc7tpvs.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fwww.krishnayangauraksha.org%2Fdonation-form.html&amp;state&amp;scope=email%20profile&amp;approval_prompt=auto"><img src="assets/images/google.svg" /></a>                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="formbox-row shadow-sm bg-white">
+                        <h5>Choose Currency & Amount</h5>
+                        <div class="row g-3">
+                            <div class="col-md-6 " id="currencybox">
+
+                                <input readonly type="hidden" id="payment_type" value="1" name="data[payment_type]">
+                                <select id="currency_name" class="px-0 form-select" onchange="convertCurrencyAmount()"
+                                    name="data[currrency_type]">
+                                    <option value="INR" selected>Indian Rupee(INR)</option>
+                                    <option value="USD" >US
+                                        Dollar(USD)</option>
+                                    <option value="EUR" >
+                                        Euro(EUR)</option>
+                                    <option value="SGD" >
+                                        Singapore Dollar(SGD)</option>
+                                    <option value="AED" >
+                                        Emirate Dirham(AED)</option>
+                                    <option value="AUD" >
+                                        Australian Dollar(AUD)</option>
+                                    <option value="CAD" >
+                                        Canadian Dollar(CAD)</option>
+                                    <option value="GBP" >
+                                        British Pound(GBP)</option>
+                                    <option value="NZD" >New
+                                        Zealand Dollar(NZD)</option>
+                                    <option value="SAR" >
+                                        Saudi Riya(SAR)</option>
+                                </select>
+
+                                <!-- <label for="currency_name" class="select-label">Select Currency</label> -->
+
+                                <small class="text-danger2 error-currency"></small>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="floating-label">
+                                    <input autocomplete="off" type="number" class="form-control numberonly ps-0"
+                                        onchange="checkAmount(this.value)" name="data[amt]" placeholder="" id="enteramt"
+                                        value=""
+                                        onkeypress="return isNumberKey(event)" >
+                                    <label for="enteramt">Enter Amount <span class="text-danger">*</span></label>
+                                    <!-- Reset Amount -->
+                                                                        <!-- Reset Amount End -->
+                                </div>
+                                <small class="text-danger2 error-amount-enteramt"></small>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="formbox-row shadow-sm bg-white">
+                        <h5>Personal Details</h5>
+                        <div class="row g-3 ">
+                            <div class="col-md-6">
+                                <div class="">
+                                    <input type="text" autocomplete="off" class="form-control ps-0"
+                                        onkeyup=" $(this).val($(this).val().toLowerCase())" id="emailaddress"
+                                        placeholder="Enter Your Email Address*" name="data[email]"
+                                        onblur="validateEmail(this.value)"
+                                        value="">
+                                    <!-- <label for="emailaddress">Email Address <span class="text-danger">*</span></label> -->
+                                    <small class="text-danger2 error-email"></small>
+                                </div>
+                                <input type="hidden" name="data[email_is_validate]" id="email_is_validate">
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="floating-label">
+                                    <!--<label for="user_phonenumber">Phone Number<span class="text-danger">*</span></label>-->
+                                    <input type="text" class="form-control  phonenumber1 phone numberonly"
+                                        onblur="validateMobile(this.value)" placeholder="Phone Number"
+                                        id="user_phonenumber" name="data[phone]" autocomplete="off"
+                                        value=""
+                                        onkeypress="return isNumberKey(event)">
+                                    <small class="text-danger2 error-currency2 fw-bold"></small>
+                                    <small class="text-danger2 error-amount-user_phonenumber"></small>
+                                </div>
+                                <input type="hidden" name="data[isd_code]" id="isd_code"
+                                    value="91">
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="floating-label">
+                                    <input type="text" autocomplete="off" maxlength="30" class="form-control  txtOnly"
+                                        id="fullname" placeholder=" " name="data[full_name]"
+                                        value="">
+                                    <label for="fullname">Full Name <span class="text-danger">*</span></label>
+                                    <small class="text-danger2 error-fullname"></small>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6" id="pancardcol">
+
+                                <div class="form-check align-self-start fw-medium mt-2">
+                                    <input class="form-check-input enterpancheck" type="checkbox" value="1"
+                                        id="enterpancheck" name="data[enter_event]">
+                                    <label class="form-check-label " for="enterpancheck">PAN <i class="opacity-50">
+                                            (Required for 80G Receipt) </i>
+                                    </label>
+                                </div>
+
+
+                                <div class="dnone pancardsection">
+                                    <div class="floating-label">
+                                        <input autocomplete="off" type="text" maxlength="10"
+                                            class="form-control pancardtxt"
+                                            onkeyup=" $(this).val($(this).val().toUpperCase())"
+                                            onchange="validatePanCard(this.value)" name="data[pancard]" id="pancard"
+                                            placeholder=""
+                                            value="">
+                                        <label for="pancard">PAN (Required for 80G Receipt)</label>
+                                        <small class="text-danger2 error-pancard"></small>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                                        <!--<div class="form-check align-self-start fw-medium">
+                    <input class="form-check-input reviewaddress" type="checkbox" value="1" id="reviewaddress">
+                    <label class="form-check-label" for="reviewaddress">Review Address Details</label>
+                </div>-->
+                                        <div
+                        class="formbox-row shadow-sm bg-white  reivewaddressbox">
+                        <h5>Address</h5>
+                        <div class="row g-3 align-items-end">
+                            <div class="col-md-6" id="country-div">
+                                <div class="">
+                                    <label for="country_name" class="small">Select Country <span
+                                            class="text-danger">*</span></label>
+                                    <select name="data[country]" id="country_name" class="w-100 select2 form-select">
+                                                                                <option                                             data-iso="af" value="Afghanistan">
+                                            Afghanistan                                        </option>
+                                                                                <option                                             data-iso="al" value="Albania">
+                                            Albania                                        </option>
+                                                                                <option                                             data-iso="dz" value="Algeria">
+                                            Algeria                                        </option>
+                                                                                <option                                             data-iso="as" value="American Samoa">
+                                            American Samoa                                        </option>
+                                                                                <option                                             data-iso="ad" value="Andorra">
+                                            Andorra                                        </option>
+                                                                                <option                                             data-iso="ao" value="Angola">
+                                            Angola                                        </option>
+                                                                                <option                                             data-iso="ai" value="Anguilla">
+                                            Anguilla                                        </option>
+                                                                                <option                                             data-iso="aq" value="Antarctica">
+                                            Antarctica                                        </option>
+                                                                                <option                                             data-iso="ag" value="Antigua And Barbuda">
+                                            Antigua And Barbuda                                        </option>
+                                                                                <option                                             data-iso="ar" value="Argentina">
+                                            Argentina                                        </option>
+                                                                                <option                                             data-iso="am" value="Armenia">
+                                            Armenia                                        </option>
+                                                                                <option                                             data-iso="aw" value="Aruba">
+                                            Aruba                                        </option>
+                                                                                <option                                             data-iso="au" value="Australia">
+                                            Australia                                        </option>
+                                                                                <option                                             data-iso="at" value="Austria">
+                                            Austria                                        </option>
+                                                                                <option                                             data-iso="az" value="Azerbaijan">
+                                            Azerbaijan                                        </option>
+                                                                                <option                                             data-iso="bs" value="Bahamas The">
+                                            Bahamas The                                        </option>
+                                                                                <option                                             data-iso="bh" value="Bahrain">
+                                            Bahrain                                        </option>
+                                                                                <option                                             data-iso="bd" value="Bangladesh">
+                                            Bangladesh                                        </option>
+                                                                                <option                                             data-iso="bb" value="Barbados">
+                                            Barbados                                        </option>
+                                                                                <option                                             data-iso="by" value="Belarus">
+                                            Belarus                                        </option>
+                                                                                <option                                             data-iso="be" value="Belgium">
+                                            Belgium                                        </option>
+                                                                                <option                                             data-iso="bz" value="Belize">
+                                            Belize                                        </option>
+                                                                                <option                                             data-iso="bj" value="Benin">
+                                            Benin                                        </option>
+                                                                                <option                                             data-iso="bm" value="Bermuda">
+                                            Bermuda                                        </option>
+                                                                                <option                                             data-iso="bt" value="Bhutan">
+                                            Bhutan                                        </option>
+                                                                                <option                                             data-iso="bo" value="Bolivia">
+                                            Bolivia                                        </option>
+                                                                                <option                                             data-iso="ba" value="Bosnia and Herzegovina">
+                                            Bosnia and Herzegovina                                        </option>
+                                                                                <option                                             data-iso="bw" value="Botswana">
+                                            Botswana                                        </option>
+                                                                                <option                                             data-iso="bv" value="Bouvet Island">
+                                            Bouvet Island                                        </option>
+                                                                                <option                                             data-iso="br" value="Brazil">
+                                            Brazil                                        </option>
+                                                                                <option                                             data-iso="io" value="British Indian Ocean Territory">
+                                            British Indian Ocean Territory                                        </option>
+                                                                                <option                                             data-iso="bn" value="Brunei">
+                                            Brunei                                        </option>
+                                                                                <option                                             data-iso="bg" value="Bulgaria">
+                                            Bulgaria                                        </option>
+                                                                                <option                                             data-iso="bf" value="Burkina Faso">
+                                            Burkina Faso                                        </option>
+                                                                                <option                                             data-iso="bi" value="Burundi">
+                                            Burundi                                        </option>
+                                                                                <option                                             data-iso="kh" value="Cambodia">
+                                            Cambodia                                        </option>
+                                                                                <option                                             data-iso="cm" value="Cameroon">
+                                            Cameroon                                        </option>
+                                                                                <option                                             data-iso="ca" value="Canada">
+                                            Canada                                        </option>
+                                                                                <option                                             data-iso="cv" value="Cape Verde">
+                                            Cape Verde                                        </option>
+                                                                                <option                                             data-iso="ky" value="Cayman Islands">
+                                            Cayman Islands                                        </option>
+                                                                                <option                                             data-iso="cf" value="Central African Republic">
+                                            Central African Republic                                        </option>
+                                                                                <option                                             data-iso="td" value="Chad">
+                                            Chad                                        </option>
+                                                                                <option                                             data-iso="cl" value="Chile">
+                                            Chile                                        </option>
+                                                                                <option                                             data-iso="cn" value="China">
+                                            China                                        </option>
+                                                                                <option                                             data-iso="cx" value="Christmas Island">
+                                            Christmas Island                                        </option>
+                                                                                <option                                             data-iso="cc" value="Cocos (Keeling) Islands">
+                                            Cocos (Keeling) Islands                                        </option>
+                                                                                <option                                             data-iso="co" value="Colombia">
+                                            Colombia                                        </option>
+                                                                                <option                                             data-iso="km" value="Comoros">
+                                            Comoros                                        </option>
+                                                                                <option                                             data-iso="cg" value="Republic Of The Congo">
+                                            Republic Of The Congo                                        </option>
+                                                                                <option                                             data-iso="cd" value="Democratic Republic Of The Congo">
+                                            Democratic Republic Of The Congo                                        </option>
+                                                                                <option                                             data-iso="ck" value="Cook Islands">
+                                            Cook Islands                                        </option>
+                                                                                <option                                             data-iso="cr" value="Costa Rica">
+                                            Costa Rica                                        </option>
+                                                                                <option                                             data-iso="ci" value="Cote D'Ivoire (Ivory Coast)">
+                                            Cote D'Ivoire (Ivory Coast)                                        </option>
+                                                                                <option                                             data-iso="hr" value="Croatia (Hrvatska)">
+                                            Croatia (Hrvatska)                                        </option>
+                                                                                <option                                             data-iso="cu" value="Cuba">
+                                            Cuba                                        </option>
+                                                                                <option                                             data-iso="cy" value="Cyprus">
+                                            Cyprus                                        </option>
+                                                                                <option                                             data-iso="cz" value="Czech Republic">
+                                            Czech Republic                                        </option>
+                                                                                <option                                             data-iso="dk" value="Denmark">
+                                            Denmark                                        </option>
+                                                                                <option                                             data-iso="dj" value="Djibouti">
+                                            Djibouti                                        </option>
+                                                                                <option                                             data-iso="dm" value="Dominica">
+                                            Dominica                                        </option>
+                                                                                <option                                             data-iso="do" value="Dominican Republic">
+                                            Dominican Republic                                        </option>
+                                                                                <option                                             data-iso="tp" value="East Timor">
+                                            East Timor                                        </option>
+                                                                                <option                                             data-iso="ec" value="Ecuador">
+                                            Ecuador                                        </option>
+                                                                                <option                                             data-iso="eg" value="Egypt">
+                                            Egypt                                        </option>
+                                                                                <option                                             data-iso="sv" value="El Salvador">
+                                            El Salvador                                        </option>
+                                                                                <option                                             data-iso="gq" value="Equatorial Guinea">
+                                            Equatorial Guinea                                        </option>
+                                                                                <option                                             data-iso="er" value="Eritrea">
+                                            Eritrea                                        </option>
+                                                                                <option                                             data-iso="ee" value="Estonia">
+                                            Estonia                                        </option>
+                                                                                <option                                             data-iso="et" value="Ethiopia">
+                                            Ethiopia                                        </option>
+                                                                                <option                                             data-iso="xa" value="External Territories of Australia">
+                                            External Territories of Australia                                        </option>
+                                                                                <option                                             data-iso="fk" value="Falkland Islands">
+                                            Falkland Islands                                        </option>
+                                                                                <option                                             data-iso="fo" value="Faroe Islands">
+                                            Faroe Islands                                        </option>
+                                                                                <option                                             data-iso="fj" value="Fiji Islands">
+                                            Fiji Islands                                        </option>
+                                                                                <option                                             data-iso="fi" value="Finland">
+                                            Finland                                        </option>
+                                                                                <option                                             data-iso="fr" value="France">
+                                            France                                        </option>
+                                                                                <option                                             data-iso="gf" value="French Guiana">
+                                            French Guiana                                        </option>
+                                                                                <option                                             data-iso="pf" value="French Polynesia">
+                                            French Polynesia                                        </option>
+                                                                                <option                                             data-iso="tf" value="French Southern Territories">
+                                            French Southern Territories                                        </option>
+                                                                                <option                                             data-iso="ga" value="Gabon">
+                                            Gabon                                        </option>
+                                                                                <option                                             data-iso="gm" value="Gambia The">
+                                            Gambia The                                        </option>
+                                                                                <option                                             data-iso="ge" value="Georgia">
+                                            Georgia                                        </option>
+                                                                                <option                                             data-iso="de" value="Germany">
+                                            Germany                                        </option>
+                                                                                <option                                             data-iso="gh" value="Ghana">
+                                            Ghana                                        </option>
+                                                                                <option                                             data-iso="gi" value="Gibraltar">
+                                            Gibraltar                                        </option>
+                                                                                <option                                             data-iso="gr" value="Greece">
+                                            Greece                                        </option>
+                                                                                <option                                             data-iso="gl" value="Greenland">
+                                            Greenland                                        </option>
+                                                                                <option                                             data-iso="gd" value="Grenada">
+                                            Grenada                                        </option>
+                                                                                <option                                             data-iso="gp" value="Guadeloupe">
+                                            Guadeloupe                                        </option>
+                                                                                <option                                             data-iso="gu" value="Guam">
+                                            Guam                                        </option>
+                                                                                <option                                             data-iso="gt" value="Guatemala">
+                                            Guatemala                                        </option>
+                                                                                <option                                             data-iso="xu" value="Guernsey and Alderney">
+                                            Guernsey and Alderney                                        </option>
+                                                                                <option                                             data-iso="gn" value="Guinea">
+                                            Guinea                                        </option>
+                                                                                <option                                             data-iso="gw" value="Guinea-Bissau">
+                                            Guinea-Bissau                                        </option>
+                                                                                <option                                             data-iso="gy" value="Guyana">
+                                            Guyana                                        </option>
+                                                                                <option                                             data-iso="ht" value="Haiti">
+                                            Haiti                                        </option>
+                                                                                <option                                             data-iso="hm" value="Heard and McDonald Islands">
+                                            Heard and McDonald Islands                                        </option>
+                                                                                <option                                             data-iso="hn" value="Honduras">
+                                            Honduras                                        </option>
+                                                                                <option                                             data-iso="hk" value="Hong Kong S.A.R.">
+                                            Hong Kong S.A.R.                                        </option>
+                                                                                <option                                             data-iso="hu" value="Hungary">
+                                            Hungary                                        </option>
+                                                                                <option                                             data-iso="is" value="Iceland">
+                                            Iceland                                        </option>
+                                                                                <option selected                                            data-iso="in" value="India">
+                                            India                                        </option>
+                                                                                <option                                             data-iso="id" value="Indonesia">
+                                            Indonesia                                        </option>
+                                                                                <option                                             data-iso="ir" value="Iran">
+                                            Iran                                        </option>
+                                                                                <option                                             data-iso="iq" value="Iraq">
+                                            Iraq                                        </option>
+                                                                                <option                                             data-iso="ie" value="Ireland">
+                                            Ireland                                        </option>
+                                                                                <option                                             data-iso="il" value="Israel">
+                                            Israel                                        </option>
+                                                                                <option                                             data-iso="it" value="Italy">
+                                            Italy                                        </option>
+                                                                                <option                                             data-iso="jm" value="Jamaica">
+                                            Jamaica                                        </option>
+                                                                                <option                                             data-iso="jp" value="Japan">
+                                            Japan                                        </option>
+                                                                                <option                                             data-iso="xj" value="Jersey">
+                                            Jersey                                        </option>
+                                                                                <option                                             data-iso="jo" value="Jordan">
+                                            Jordan                                        </option>
+                                                                                <option                                             data-iso="kz" value="Kazakhstan">
+                                            Kazakhstan                                        </option>
+                                                                                <option                                             data-iso="ke" value="Kenya">
+                                            Kenya                                        </option>
+                                                                                <option                                             data-iso="ki" value="Kiribati">
+                                            Kiribati                                        </option>
+                                                                                <option                                             data-iso="kp" value="Korea North">
+                                            Korea North                                        </option>
+                                                                                <option                                             data-iso="kr" value="Korea South">
+                                            Korea South                                        </option>
+                                                                                <option                                             data-iso="kw" value="Kuwait">
+                                            Kuwait                                        </option>
+                                                                                <option                                             data-iso="kg" value="Kyrgyzstan">
+                                            Kyrgyzstan                                        </option>
+                                                                                <option                                             data-iso="la" value="Laos">
+                                            Laos                                        </option>
+                                                                                <option                                             data-iso="lv" value="Latvia">
+                                            Latvia                                        </option>
+                                                                                <option                                             data-iso="lb" value="Lebanon">
+                                            Lebanon                                        </option>
+                                                                                <option                                             data-iso="ls" value="Lesotho">
+                                            Lesotho                                        </option>
+                                                                                <option                                             data-iso="lr" value="Liberia">
+                                            Liberia                                        </option>
+                                                                                <option                                             data-iso="ly" value="Libya">
+                                            Libya                                        </option>
+                                                                                <option                                             data-iso="li" value="Liechtenstein">
+                                            Liechtenstein                                        </option>
+                                                                                <option                                             data-iso="lt" value="Lithuania">
+                                            Lithuania                                        </option>
+                                                                                <option                                             data-iso="lu" value="Luxembourg">
+                                            Luxembourg                                        </option>
+                                                                                <option                                             data-iso="mo" value="Macau S.A.R.">
+                                            Macau S.A.R.                                        </option>
+                                                                                <option                                             data-iso="mk" value="Macedonia">
+                                            Macedonia                                        </option>
+                                                                                <option                                             data-iso="mg" value="Madagascar">
+                                            Madagascar                                        </option>
+                                                                                <option                                             data-iso="mw" value="Malawi">
+                                            Malawi                                        </option>
+                                                                                <option                                             data-iso="my" value="Malaysia">
+                                            Malaysia                                        </option>
+                                                                                <option                                             data-iso="mv" value="Maldives">
+                                            Maldives                                        </option>
+                                                                                <option                                             data-iso="ml" value="Mali">
+                                            Mali                                        </option>
+                                                                                <option                                             data-iso="mt" value="Malta">
+                                            Malta                                        </option>
+                                                                                <option                                             data-iso="xm" value="Man (Isle of)">
+                                            Man (Isle of)                                        </option>
+                                                                                <option                                             data-iso="mh" value="Marshall Islands">
+                                            Marshall Islands                                        </option>
+                                                                                <option                                             data-iso="mq" value="Martinique">
+                                            Martinique                                        </option>
+                                                                                <option                                             data-iso="mr" value="Mauritania">
+                                            Mauritania                                        </option>
+                                                                                <option                                             data-iso="mu" value="Mauritius">
+                                            Mauritius                                        </option>
+                                                                                <option                                             data-iso="yt" value="Mayotte">
+                                            Mayotte                                        </option>
+                                                                                <option                                             data-iso="mx" value="Mexico">
+                                            Mexico                                        </option>
+                                                                                <option                                             data-iso="fm" value="Micronesia">
+                                            Micronesia                                        </option>
+                                                                                <option                                             data-iso="md" value="Moldova">
+                                            Moldova                                        </option>
+                                                                                <option                                             data-iso="mc" value="Monaco">
+                                            Monaco                                        </option>
+                                                                                <option                                             data-iso="mn" value="Mongolia">
+                                            Mongolia                                        </option>
+                                                                                <option                                             data-iso="ms" value="Montserrat">
+                                            Montserrat                                        </option>
+                                                                                <option                                             data-iso="ma" value="Morocco">
+                                            Morocco                                        </option>
+                                                                                <option                                             data-iso="mz" value="Mozambique">
+                                            Mozambique                                        </option>
+                                                                                <option                                             data-iso="mm" value="Myanmar">
+                                            Myanmar                                        </option>
+                                                                                <option                                             data-iso="na" value="Namibia">
+                                            Namibia                                        </option>
+                                                                                <option                                             data-iso="nr" value="Nauru">
+                                            Nauru                                        </option>
+                                                                                <option                                             data-iso="np" value="Nepal">
+                                            Nepal                                        </option>
+                                                                                <option                                             data-iso="an" value="Netherlands Antilles">
+                                            Netherlands Antilles                                        </option>
+                                                                                <option                                             data-iso="nl" value="Netherlands The">
+                                            Netherlands The                                        </option>
+                                                                                <option                                             data-iso="nc" value="New Caledonia">
+                                            New Caledonia                                        </option>
+                                                                                <option                                             data-iso="nz" value="New Zealand">
+                                            New Zealand                                        </option>
+                                                                                <option                                             data-iso="ni" value="Nicaragua">
+                                            Nicaragua                                        </option>
+                                                                                <option                                             data-iso="ne" value="Niger">
+                                            Niger                                        </option>
+                                                                                <option                                             data-iso="ng" value="Nigeria">
+                                            Nigeria                                        </option>
+                                                                                <option                                             data-iso="nu" value="Niue">
+                                            Niue                                        </option>
+                                                                                <option                                             data-iso="nf" value="Norfolk Island">
+                                            Norfolk Island                                        </option>
+                                                                                <option                                             data-iso="mp" value="Northern Mariana Islands">
+                                            Northern Mariana Islands                                        </option>
+                                                                                <option                                             data-iso="no" value="Norway">
+                                            Norway                                        </option>
+                                                                                <option                                             data-iso="om" value="Oman">
+                                            Oman                                        </option>
+                                                                                <option                                             data-iso="pk" value="Pakistan">
+                                            Pakistan                                        </option>
+                                                                                <option                                             data-iso="pw" value="Palau">
+                                            Palau                                        </option>
+                                                                                <option                                             data-iso="ps" value="Palestinian Territory Occupied">
+                                            Palestinian Territory Occupied                                        </option>
+                                                                                <option                                             data-iso="pa" value="Panama">
+                                            Panama                                        </option>
+                                                                                <option                                             data-iso="pg" value="Papua new Guinea">
+                                            Papua new Guinea                                        </option>
+                                                                                <option                                             data-iso="py" value="Paraguay">
+                                            Paraguay                                        </option>
+                                                                                <option                                             data-iso="pe" value="Peru">
+                                            Peru                                        </option>
+                                                                                <option                                             data-iso="ph" value="Philippines">
+                                            Philippines                                        </option>
+                                                                                <option                                             data-iso="pn" value="Pitcairn Island">
+                                            Pitcairn Island                                        </option>
+                                                                                <option                                             data-iso="pl" value="Poland">
+                                            Poland                                        </option>
+                                                                                <option                                             data-iso="pt" value="Portugal">
+                                            Portugal                                        </option>
+                                                                                <option                                             data-iso="pr" value="Puerto Rico">
+                                            Puerto Rico                                        </option>
+                                                                                <option                                             data-iso="qa" value="Qatar">
+                                            Qatar                                        </option>
+                                                                                <option                                             data-iso="re" value="Reunion">
+                                            Reunion                                        </option>
+                                                                                <option                                             data-iso="ro" value="Romania">
+                                            Romania                                        </option>
+                                                                                <option                                             data-iso="ru" value="Russia">
+                                            Russia                                        </option>
+                                                                                <option                                             data-iso="rw" value="Rwanda">
+                                            Rwanda                                        </option>
+                                                                                <option                                             data-iso="sh" value="Saint Helena">
+                                            Saint Helena                                        </option>
+                                                                                <option                                             data-iso="kn" value="Saint Kitts And Nevis">
+                                            Saint Kitts And Nevis                                        </option>
+                                                                                <option                                             data-iso="lc" value="Saint Lucia">
+                                            Saint Lucia                                        </option>
+                                                                                <option                                             data-iso="pm" value="Saint Pierre and Miquelon">
+                                            Saint Pierre and Miquelon                                        </option>
+                                                                                <option                                             data-iso="vc" value="Saint Vincent And The Grenadines">
+                                            Saint Vincent And The Grenadines                                        </option>
+                                                                                <option                                             data-iso="ws" value="Samoa">
+                                            Samoa                                        </option>
+                                                                                <option                                             data-iso="sm" value="San Marino">
+                                            San Marino                                        </option>
+                                                                                <option                                             data-iso="st" value="Sao Tome and Principe">
+                                            Sao Tome and Principe                                        </option>
+                                                                                <option                                             data-iso="sa" value="Saudi Arabia">
+                                            Saudi Arabia                                        </option>
+                                                                                <option                                             data-iso="sn" value="Senegal">
+                                            Senegal                                        </option>
+                                                                                <option                                             data-iso="rs" value="Serbia">
+                                            Serbia                                        </option>
+                                                                                <option                                             data-iso="sc" value="Seychelles">
+                                            Seychelles                                        </option>
+                                                                                <option                                             data-iso="sl" value="Sierra Leone">
+                                            Sierra Leone                                        </option>
+                                                                                <option                                             data-iso="sg" value="Singapore">
+                                            Singapore                                        </option>
+                                                                                <option                                             data-iso="sk" value="Slovakia">
+                                            Slovakia                                        </option>
+                                                                                <option                                             data-iso="si" value="Slovenia">
+                                            Slovenia                                        </option>
+                                                                                <option                                             data-iso="xg" value="Smaller Territories of the UK">
+                                            Smaller Territories of the UK                                        </option>
+                                                                                <option                                             data-iso="sb" value="Solomon Islands">
+                                            Solomon Islands                                        </option>
+                                                                                <option                                             data-iso="so" value="Somalia">
+                                            Somalia                                        </option>
+                                                                                <option                                             data-iso="za" value="South Africa">
+                                            South Africa                                        </option>
+                                                                                <option                                             data-iso="gs" value="South Georgia">
+                                            South Georgia                                        </option>
+                                                                                <option                                             data-iso="ss" value="South Sudan">
+                                            South Sudan                                        </option>
+                                                                                <option                                             data-iso="es" value="Spain">
+                                            Spain                                        </option>
+                                                                                <option                                             data-iso="lk" value="Sri Lanka">
+                                            Sri Lanka                                        </option>
+                                                                                <option                                             data-iso="sd" value="Sudan">
+                                            Sudan                                        </option>
+                                                                                <option                                             data-iso="sr" value="Suriname">
+                                            Suriname                                        </option>
+                                                                                <option                                             data-iso="sj" value="Svalbard And Jan Mayen Islands">
+                                            Svalbard And Jan Mayen Islands                                        </option>
+                                                                                <option                                             data-iso="sz" value="Swaziland">
+                                            Swaziland                                        </option>
+                                                                                <option                                             data-iso="se" value="Sweden">
+                                            Sweden                                        </option>
+                                                                                <option                                             data-iso="ch" value="Switzerland">
+                                            Switzerland                                        </option>
+                                                                                <option                                             data-iso="sy" value="Syria">
+                                            Syria                                        </option>
+                                                                                <option                                             data-iso="tw" value="Taiwan">
+                                            Taiwan                                        </option>
+                                                                                <option                                             data-iso="tj" value="Tajikistan">
+                                            Tajikistan                                        </option>
+                                                                                <option                                             data-iso="tz" value="Tanzania">
+                                            Tanzania                                        </option>
+                                                                                <option                                             data-iso="th" value="Thailand">
+                                            Thailand                                        </option>
+                                                                                <option                                             data-iso="tg" value="Togo">
+                                            Togo                                        </option>
+                                                                                <option                                             data-iso="tk" value="Tokelau">
+                                            Tokelau                                        </option>
+                                                                                <option                                             data-iso="to" value="Tonga">
+                                            Tonga                                        </option>
+                                                                                <option                                             data-iso="tt" value="Trinidad And Tobago">
+                                            Trinidad And Tobago                                        </option>
+                                                                                <option                                             data-iso="tn" value="Tunisia">
+                                            Tunisia                                        </option>
+                                                                                <option                                             data-iso="tr" value="Turkey">
+                                            Turkey                                        </option>
+                                                                                <option                                             data-iso="tm" value="Turkmenistan">
+                                            Turkmenistan                                        </option>
+                                                                                <option                                             data-iso="tc" value="Turks And Caicos Islands">
+                                            Turks And Caicos Islands                                        </option>
+                                                                                <option                                             data-iso="tv" value="Tuvalu">
+                                            Tuvalu                                        </option>
+                                                                                <option                                             data-iso="ug" value="Uganda">
+                                            Uganda                                        </option>
+                                                                                <option                                             data-iso="ua" value="Ukraine">
+                                            Ukraine                                        </option>
+                                                                                <option                                             data-iso="ae" value="United Arab Emirates">
+                                            United Arab Emirates                                        </option>
+                                                                                <option                                             data-iso="gb" value="United Kingdom">
+                                            United Kingdom                                        </option>
+                                                                                <option                                             data-iso="us" value="United States">
+                                            United States                                        </option>
+                                                                                <option                                             data-iso="um" value="United States Minor Outlying Islands">
+                                            United States Minor Outlying Islands                                        </option>
+                                                                                <option                                             data-iso="uy" value="Uruguay">
+                                            Uruguay                                        </option>
+                                                                                <option                                             data-iso="uz" value="Uzbekistan">
+                                            Uzbekistan                                        </option>
+                                                                                <option                                             data-iso="vu" value="Vanuatu">
+                                            Vanuatu                                        </option>
+                                                                                <option                                             data-iso="va" value="Vatican City State (Holy See)">
+                                            Vatican City State (Holy See)                                        </option>
+                                                                                <option                                             data-iso="ve" value="Venezuela">
+                                            Venezuela                                        </option>
+                                                                                <option                                             data-iso="vn" value="Vietnam">
+                                            Vietnam                                        </option>
+                                                                                <option                                             data-iso="vg" value="Virgin Islands (British)">
+                                            Virgin Islands (British)                                        </option>
+                                                                                <option                                             data-iso="vi" value="Virgin Islands (US)">
+                                            Virgin Islands (US)                                        </option>
+                                                                                <option                                             data-iso="wf" value="Wallis And Futuna Islands">
+                                            Wallis And Futuna Islands                                        </option>
+                                                                                <option                                             data-iso="eh" value="Western Sahara">
+                                            Western Sahara                                        </option>
+                                                                                <option                                             data-iso="ye" value="Yemen">
+                                            Yemen                                        </option>
+                                                                                <option                                             data-iso="yu" value="Yugoslavia">
+                                            Yugoslavia                                        </option>
+                                                                                <option                                             data-iso="zm" value="Zambia">
+                                            Zambia                                        </option>
+                                                                                <option                                             data-iso="zw" value="Zimbabwe">
+                                            Zimbabwe                                        </option>
+                                                                            </select>
+                                    <small class="text-danger2 error-currency3 fw-bold"></small>
+                                    <small class="text-danger2 error-country_name"></small>
+                                </div>
+                            </div>
+                            <div class="col-md-6" id="national-pincode">
+                                <div class="floating-label">
+                                    <input type="number" class="form-control numberonly " id="Pincode_s" placeholder=" "
+                                        onblur="validatePincode()" name="data[zipcode]"
+                                        onkeypress="return isNumberKey(event)"
+                                        value="">
+                                    <label for="Pincode_s">Pincode</label>
+                                    <small class="text-danger2 error-Pincode_s"></small>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-check align-self-start fw-medium">
+                                    <input class="form-check-input addaddress" type="checkbox" value="1"
+                                        name="data[enter_full_address]" id="addaddress">
+                                    <label class="form-check-label" for="addaddress">Enter Complete Address for Postal
+                                        Communication</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12  dnone addfulladdress">
+                                <div class="row g-3 align-items-end">
+                                    <div class="col-md-12" id="international-pincode">
+                                        <div class="floating-label">
+                                            <textarea class="form-control" id="floatingTextarea" maxlength="60"
+                                                name="data[address1]"
+                                                placeholder="(Don’t enter State, City & Country again)"></textarea>
+                                            <label for="floatingTextarea">Address</label>
+                                            <small class="text-danger2 error-address1"></small>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4  selectstate">
+                                        <div class="">
+                                            <label for="state_name" class="small">Select State </label>
+                                            <select name="data[state]" id="state_name" class="w-100 state-select2">
+</select>
+                                            <small class="text-danger2"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 typecity">
+                                        <div class="floating-label">
+                                            <input type="text" class="form-control  txtOnly" autocomplete="off"
+                                                maxlength="20" id="City_s" name="data[city]"
+                                                placeholder="Enter city here"
+                                                value="">
+                                            <label for="City_s">City</label>
+                                            <small class="text-danger error-City_s"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 selectcity">
+                                        <div class="">
+                                            <label for="city_name" class="select-label">Select Post Office </label>
+                                            <select name="data[city]" id="city_name" class="w-100 city-select2 form-select">
+</select>
+
+                                            <small class="text-danger2 error-city_name"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 typeoptionalcity">
+                                        <div class="floating-label">
+                                            <input type="text" class="form-control  txtOnly" autocomplete="off"
+                                                maxlength="20" id="optional_city" name="data[optional_city]"
+                                                placeholder="Enter city here"
+                                                value="">
+                                            <label for="optional_city">City</label>
+                                            <small class="text-danger error-optional_city"></small>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" id="event_type_div">
+                    <div class="formbox-row shadow-sm bg-white py-3">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-check align-self-start fw-medium">
+                                    <input class="form-check-input eventdateremark" type="checkbox" value="1"
+                                        id="eventdateremark" name="data[enter_event]">
+                                    <label class="form-check-label " for="eventdateremark">Event Date & Type <span
+                                            style="font-size: 12px;">(To perfom an event on a specific date for a
+                                            specific purpose. Example- Gaudan on your birthday)</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-12 eventsection  dnone">
+                                <div class="row g-3 align-items-end">
+                                    <div class="col-md-4">
+                                        <div class="floating-label">
+                                            <input type="text" class="form-control  txtOnly" maxlength="30" id="Is_For"
+                                                placeholder="Name" name="data[event_is_for]"
+                                                value="">
+                                            <label for="Is_For">Event is of</label>
+                                            <small class="text-danger2 error-event_is_for"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="floating-label">
+                                            <input type="text" class="form-control   date" id="eventdate_s" readonly
+                                                name="data[event_date]" placeholder="dd-mm-yyyy"
+                                                value="">
+                                            <label for="eventdate_s">Event Date</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="eventtype_s" class="small">Event Type</label>
+                                        <select id="eventtype_s" class="w-100 select2" name="data[dtype]">
+                                            <option value="gausewa">Gausewa</option>
+                                            <option value="birthday">Birthday</option>
+                                            <option value="anniversary">Anniversary</option>
+                                            <option value="shrad-punya-tithi">Shrad / Punya Tithi</option>
+                                            <option value="occasion">Occasion</option>
+                                            <option value="festival">Festival</option>
+                                            <option value="others">Others</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div id="dtype_occasion_hide" class='dnone'>
+                                            <select id="dtype_occasion" class="w-100 form-select"
+                                                name="data[dtype_occasion]">
+                                                <option value="">
+                                                    Occasion Type                                                </option>
+                                                <option value="marriage">Marriage</option>
+                                                <option value="house-warming">House Warming</option>
+                                                <option value="new-job">New Job</option>
+                                                <option value="new-business">New Business</option>
+                                                <option value="birth-of-a-child">Birth of a child</option>
+                                                <option value="new-projects">New Projects</option>
+                                                <option value="promotions">Promotions</option>
+                                                <option value="business-expansion">Business Expansion</option>
+                                                <option value="success">Success</option>
+                                                <option value="awards">Awards</option>
+                                            </select>
+                                        </div>
+                                        <input type="text"
+                                            class="form-control txtOnly dnone"
+                                            maxlength="20" id="input_event_type" placeholder="Enter event type"
+                                            name="data[dtype_text]"
+                                            value="">
+                                        <small class="text-danger2 error-event_type"></small>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="floating-label">
+                                            <textarea class="form-control " maxlength="100" id="remarks_S"
+                                                placeholder=" "
+                                                name="data[remark]"></textarea>
+                                            <label for="remarks_S">Remarks</label>
+                                            <small class="text-danger2 error-remark"></small>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Start Cause section -->
+                <div class="col-lg-6 dnone" id="cause_div">
+                    <div
+                        class="formbox-row shadow-sm bg-white  reivewaddressbox">
+                        <h5>Select Cause</h5>
+                        <div class="row g-3 align-items-end">
+                            <div class="col-md-6">
+                                <div class="">
+                                    <label for="cause_name" class="small">Select Cause <span
+                                            class="text-danger">*</span></label>
+                                    <select name="data[cause]" id="cause_name" class="w-100 select2 form-select">
+                                        <option value="Fodder for mother cows">Fodder for mother cows</option>
+                                        <option value="Medical Help for Cows">Medical Help for Cows</option>
+                                        <option value="Medical Emergency for Gauvansh">Medical Emergency for Gauvansh
+                                        </option>
+                                        <option value="Support Male Calves/Ox/Bulls">Support Male Calves/ Ox/Bulls
+                                        </option>
+                                        <option value="Food for Unprivileged People">Food for Unprivileged People
+                                        </option>
+                                        <option value="Feed Bhramins and Saints of Himalayas">Feed Bhramins and Saints
+                                            of Himalayas</option>
+                                        <option value="Pehli Roti Gay Ki( Feed First Roti to Cows)">Pehli Roti Gay Ki(
+                                            Feed First Roti to Cows)</option>
+                                        <option value="Pooja and yagya in my Name">Pooja and yagya in my Name</option>
+                                    </select>
+                                    <small class="text-danger2 error-cause"></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Cause section -->
+
+
+
+            </div>
+
+            <div class="row mt-0 gy-3 justify-content-center align-items-center flex-column">
+                <div class="col-lg-9 d-none" id="payoption">
+                    <div class="formbox-row shadow-sm bg-white" id="paymentlinks">
+                        <h5>Payment</h5>
+                        <!--<div class="row g-3">-->
+                        <div class="row g-2 justify-content-center">
+
+                            <div class="col-md-12">
+                                <h2 class="mb-4 fs-5 text-center w-100 paymentgateway-text fw-medium">Select payment
+                                    mode (Only
+                                    Indian bank & Cards)</h2>
+                                <!-- INR Payment Option -->
+                                <ul class="quiz_q  sq-box flex-wrap justify-content-center  indian-paymentgateway">
+                                    <li class="default-active">
+                                        <label for="onlinepay">
+                                            <div class="d-flex align-items-center">
+                                                <div class="form-check">
+                                                    <input class="form-check-input chbpay" type="checkbox"
+                                                        id="onlinepay" value="8" name="data[payment_option]">
+                                                </div>
+                                                <span> Credit Card/ Debit Card/ Net Banking/ UPI/ QR Code/ Wallet
+                                                    Payment</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li class="d-none d-md-flex">
+                                        <label for="scanqr">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="form-check m-0">
+                                                    <input class="form-check-input chbpay " type="checkbox" id="scanqr"
+                                                        value="7" name="data[payment_option]">
+                                                </div>
+                                                <span>Account Number For Direct Bank Transfer </span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <!-- INR Payment Option END -->
+                                <!-- International Payment Option -->
+                                <ul class="quiz_q  sq-box flex-wrap justify-content-center  international-paymentgateway"
+                                    style="display:none">
+                                    <li class="d-none" id="onlinepay1_li">
+                                        <label for="onlinepay1">
+                                            <div class="d-flex align-items-center">
+                                                <div class="form-check m-0">
+                                                    <input class="form-check-input chbpay" type="checkbox"
+                                                        id="onlinepay1" value="3" name="data[payment_option]">
+                                                </div>
+                                                <span> Credit card/ Debit card/ Diners</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li class="d-none">
+                                        <label for="scanqr1">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="form-check m-0">
+                                                    <input class="form-check-input chbpay" type="checkbox" value="4"
+                                                        id="scanqr1" name="data[payment_option]">
+                                                </div>
+                                                <span>Credit Card / Debit Card / Paypal</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <small class="text-danger2 error-paymentoption"></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="razorpay_as_wish_options" class="dnone">
+                        <input type="hidden" id="payment_mode" name="payment_mode" value="card">
+                    </div>
+                    <div class="form-check fs-11 align-self-start ">
+                        <input class="form-check-input" type="checkbox" value="1" name="data[receive_update]"
+                            id="rec_update" checked>
+                        <label class="form-check-label" for="updates"> Receive updates and reminders through SMS,
+                            WhatsApp or Emails </label>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center" id="monthlybutton">
+                    <div class=" mb-4">
+                        <!-- <img src="https://www.krishnayangauraksha.org/assets/celebration/assets/images/secure.svg" width="120"> -->
+                        <button type="button" onclick="validateForm()" id="proceedBTN"
+                            class="btn btn-primary text-white w-100 ekartbtn btn-lg px-md-5 fw-bold fs-5 fdbtn"> Proceed
+                        </button>
+                        <div class="mb-5 mt-4">
+                            <img src="assets/celebration/assets/images/ssl-secure.png" width="70"
+                                class="me-2 "> SSL SECURED
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </form>
+    <span id="render-subscription-pay-info"></span>
+</div>
+<!-- this code for show payment option for monthly INR -->
+
+<div class="modal" id="newpaymentmodal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-fullscreen-md-down">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h5 class="modal-title text-white fs-18">Select Payment Method</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+             
+<div class="paymentpopup">
+    <div class="inner-box">
+        <div class="card">
+            
+            <div class="card-body">
+
+                <div class="paymentslinks" role="group">
+                    <input type="radio" class="btn-check" name="btnradio" value="card" id="btnradio1"
+                        autocomplete="off">
+                    <label class="btn " for="btnradio1">
+                        <img src="new-assets/images/icons/cards.svg" alt="">
+                        <div class="">
+                            <h3>Cards <span>Recommended</span> </h3>
+                            <p>Visa, Mastercard or Rupay Credit or Debit Cards</p>
+                        </div>
+                    </label>
+
+                    <input type="radio" class="btn-check" name="btnradio" value="netbanking" id="btnradio2"
+                        autocomplete="off">
+                    <label class="btn " for="btnradio2">
+                        <img src="new-assets/images/icons/net-banking.svg" alt="">
+                        <div class="">
+                            <h3>Net banking </h3>
+                            <p>Sign up for an e-mandate with your bank account</p>
+                        </div>
+                    </label>
+                    
+                    <input type="radio" class="btn-check" name="btnradio" value="upi" id="btnradio3" autocomplete="off">
+                    <label class="btn " for="btnradio3">
+                        <img src="new-assets/images/icons/upi.svg" alt="">
+                        <div class="">
+                            <h3>UPI</h3>
+                            <p>Google Pay, Paytm, PhonePe or other UPI apps</p>
+                        </div>
+                    </label>
+                </div>
+                <div class="loader-box" id="own_wish_wait" style="display:none;">
+                    <div class="spinner-border text-warning" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                   </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>   
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- this code for show payment option for monthly INR -->
+<!-- footer -->
+</div>
+</div>
+<div class="modal fade" id="socialmodal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close btn-close2" data-bs-dismiss="modal"></button>
+                <p class="text-center">Each share of yours will bring happiness to mother cows </p>
+                <ul class="modalshareicons">
+                    <li> <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.krishnayangauraksha.org/donation-form.html"
+                            target="_blank"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-src="https://docs.krishnayangauraksha.org/donation_page/images/facebook.svg"
+                                alt="Facebook Icon"> </a> </li>
+                    <li><a href="https://twitter.com/share?ref_src=https://www.krishnayangauraksha.org/donation-form.html" target="_blank"><img
+                                src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-src="https://docs.krishnayangauraksha.org/donation_page/images/twitter.svg"
+                                alt="Twitter Icon"></a></li>
+                    <li><a href="https://www.instagram.com/krishnayangauraksha/" target="_blank"><img
+                                src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-src="https://docs.krishnayangauraksha.org/donation_page/images/instagram.svg"
+                                alt="Instagram Icon"> </a></li>
+                    <li><a href='https://api.whatsapp.com/send?phone=&amp;text=https://www.krishnayangauraksha.org/donation-form.html%0A%20I%27m%20interested%20to%20know%20more%20about%20this.%20Can%20you%20help?'
+                            target="_blank"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-src="https://docs.krishnayangauraksha.org/donation_page/images/whatsapp.svg"
+                                alt="Whatsapp Icon"> </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="adoptcanvas">
+    <div class="offcanvas-header bg-primary">
+        <a href="index.html" class="offcanvas-title text-white "> <img
+                src="new-assets/images/logo1.html" class="me-2" width="50"
+                alt="">Shree Krishnayan Gaushala</a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="menu-list">
+            <ul id="menu-content" class="menu-content">
+
+                <li class=""> <a href="https://gwala.krishnayangauraksha.org/Donor/GauvanshAdoption"><i
+                            class="fa-solid fa-circle"></i>Adopt A Gauvansh</a></li>
+                <li class=""> <a href="https://gwala.krishnayangauraksha.org/Donor/GauvanshAdoptionReport"><i
+                            class="fa-solid fa-circle"></i>My Adopted Cow</a></li>
+                <li class=""> <a href="https://gwala.krishnayangauraksha.org/Donor/ExtraActivity"><i
+                            class="fa-solid fa-circle"></i>Extra Activity</a></li>
+
+            </ul>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="doantecanvas">
+    <div class="offcanvas-header bg-primary">
+        <a href="index.html" class="offcanvas-title text-white "> <img
+                src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                data-src="https://www.krishnayangauraksha.org/new-assets/images/logo1.webp" class="me-2"
+                width="50" alt="">Shree Krishnayan Gaushala</a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="menu-list">
+
+
+            <ul id="menu-content" class="menu-content">
+                <li><a href="donation-form-2.html"> <i
+                            class="fa-regular fa-hand-holding-dollar"></i>One Time <span
+                            class="fa-regular ms-auto fa-chevron-right"></span></a></li>
+                <li><a href="donation-form-2.html#monthly"><i
+                            class="fa-regular fa-hands-holding-dollar"></i>Monthly <span
+                            class="fa-regular ms-auto fa-chevron-right"></span> </a></li>
+            </ul>
+
+
+        </div>
+    </div>
+</div>
+
+
+  <div id="online-gaushala-visit" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content body-bg">
+        <form id="live_request_form" onsubmit="return checkValidate_live();">
+        <input type="hidden" name="csrf_test_name" value="507e97488e64af4e612d278199781768">
+          <div class="modal-header">
+            <h5 class="modal-title text-center w-100">Register for Online Gaushala Visit</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button> </div>
+          <div class="modal-body">
+            <div class="row g-3">
+              <div class="col-lg-12">
+                <div id="live_status"></div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form-floating">
+					                    <input type="hidden" name="data_from" value='Online Live Gaushala Visit'>
+
+                  <input type="text" class="form-control" id="live_fname" name="live_fname" value="" placeholder="Full Name" required>
+                  <label for="live_fname">Full Name*</label>
+                  <small class="text-danger2 error-fullname"></small>
+                </div>
+              </div>
+             
+				  <div class="col-lg-4">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="live_email" name="live_email" value="" placeholder="Email Address*" required>
+                  <label for="live_email">Email Address*</label>
+                  <small class="text-danger2 error-email"></small>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <input id="phone" name="phone" type="tel" class="form-control py-3" placeholder="Mobile Number*" value=""  onkeypress="return isNumberKey(event)" required>
+                <small class="text-danger2 error-phone"></small>
+          </div>
+          <div class="col-lg-4">
+                <div class="form-floating">
+                  <input type="date" class="form-control" id="visit_date" name="visit_date" value="" placeholder="Visit Date*" required>
+                  <label for="live_email">Visit Date*</label>
+                  <small class="text-danger2 error-visitdate"></small>
+                </div>
+          </div>
+          <div class="col-lg-4">
+                <div class="form-floating">
+                <select class="form-control" id="visit_time" name="visit_time" required>
+                    <option value="">Select Time</option>
+                    <option value="7am - 8am">7am - 8am</option>
+                    <option value="8am - 9am">8am - 9am</option>
+                    <option value="2pm - 3pm">2pm - 3pm</option>
+                    <option value="3pm - 4pm">3pm - 4pm</option>
+                    <option value="4pm - 5pm">4pm - 5pm</option>
+                  </select>
+                  <label for="live_email">Visit Time*</label>
+                  <small class="text-danger2 error-visittime"></small>
+                </div>
+          </div>    
+             
+              <div class="col-lg-12">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="message" id="live_message" name="live_message" style="height: 100px"></textarea>
+                  <label for="live_message">message</label>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group message-btn"> </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+           
+            <input type="hidden" id="livetoken" name="livetoken" />
+            <button type="submit" name="livesubmit" id="livesubmit" class="btn btn-primary text-white"> Submit </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="assets/donation_page/js/newCampaign/lazysizes.min.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script type="text/javascript" src="new-assets/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="assets/js/validate-form.js"></script>
+<script type="text/javascript" src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+<!-- <script src="assets/vendors/marquee/jquery.marquee.min.js"></script> -->
+<script type="text/javascript" src="assets/vendors/fancybox-5/fancybox.umd.js"></script>
+<script type="text/javascript" src="assets/vendors/select2/select2.min.js"></script>
+
+<script type="text/javascript" src="new-assets/vendors/iti/js/intlTelInput.min.js"></script>
+<script type="text/javascript" src="assets/js/myscript.js"></script>
+<script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit">
+</script>
+<script type="text/javascript" src='new-assets/js/srv-script.js'></script>
+
+<script>
+
+function goBack() {
+        window.history.back();
+    }
+
+
+$(document).ready(function() {
+    
+
+    
+});
+
+
+window.onload = function() {
+    var userAgent = navigator.userAgent.toLowerCase();
+
+    // Check if user agent contains 'mobile' or 'android' to detect mobile browsers
+    if (userAgent.includes('mobile') || userAgent.includes('android')) {
+        // Show the div if it's a mobile browser
+        document.getElementById('li_Astrology').style.display = 'block';
+    }
+};
+</script>
+
+<script type="text/javascript">
+window.setTimeout(function() {
+    var selectElement = document.querySelector(".goog-te-combo");
+    selectElement.addEventListener("change", function() {
+        var selectedValue = selectElement.value;
+        if (selectedValue != '' || selectedValue != null) {
+            $.ajax({
+                type: 'POST',
+                url: "https://www.krishnayangauraksha.org/Contact_Us/lang_session",
+                data: {
+                    "csrf_test_name":'507e97488e64af4e612d278199781768',
+                    language: selectedValue
+                },
+                success: function(response) {}
+            });
+        }
+    });
+}, 2000);
+
+function googleTranslateElementInit(selectedLang = '') {
+
+    // Set the default language to Hindi and store the preference in a cookie
+        if ($("#addtheir_input").val() == 'English') {
+        var convt_lang = "en";
+    } else {
+        var convt_lang = $("#addtheir_input").val();
+    }
+    if (selectedLang != '') {
+        var convt_lang = selectedLang;
+        $.ajax({
+            type: 'POST',
+            url: "https://www.krishnayangauraksha.org/Contact_Us/lang_session",
+            data: {
+                "csrf_test_name":'507e97488e64af4e612d278199781768',
+                language: convt_lang
+            },
+            success: function(response) {}
+        });
+    }
+    setCookie('googtrans', '/en/' + convt_lang, 100);
+    var lang_name = $("#GL_" + convt_lang).text();
+    //alert(lang_name);
+    $("#addtheir_input").val(convt_lang);
+    $(".addtheir").text(lang_name);
+
+    new google.translate.TranslateElement({
+        pageLanguage: 'en', // Default page language
+        includedLanguages: 'af,sq,am,ar,hy,az,eu,be,bn,bs,bg,ca,ceb,zh-CN,zh-TW,co,hr,cs,da,nl,en,eo,et,fi,fr,fy,gl,ka,de,el,gu,ht,ha,haw,he,hi,hmn,hu,is,ig,id,ga,it,ja,jv,kn,kk,km,rw,ko,ku,ky,lo,la,lv,lt,lb,mk,mg,ms,ml,mt,mi,mr,mn,my,ne,no,ny,or,ps,fa,pl,pt,pa,ro,ru,sm,gd,sr,st,sn,sd,si,sk,sl,so,es,su,sw,sv,tl,tg,ta,tt,te,th,tr,tk,uk,ur,ug,uz,vi,cy,xh,yi,yo,zu', // Languages available for translation (English, Hindi, Tamil)
+        defaultLanguage: 'en' // Default translation language
+
+    }, 'google_translate_element');
+    if (selectedLang != '') {
+        location.href = '';
+    }
+}
+// Function to set a cookie
+function setCookie(key, value, expiry) {
+    var expires = new Date();
+    expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
+    document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+}
+// Call the function to initialize the translation element when the page loads
+googleTranslateElementInit();
+</script>
+
+
+<script>
+// for show gaushala visit popup on load
+$(window).on('load', function() {
+    if (window.location.hash == "#online-gaushala-visit") {
+        $("#online-gaushala-visit").modal("show");
+        // console.log(window.location.hash);
+    } else {
+        // console.log("no");
+    }
+});
+
+$('.marquee').marquee({
+    //duration in milliseconds of the marquee
+    duration: 15000,
+    //gap in pixels between the tickers
+    gap: 50,
+    //time in milliseconds before the marquee will start animating
+    delayBeforeStart: 0,
+    //pauseOnHover: true,
+    //'left' or 'right'
+    direction: 'left',
+    startVisible: true,
+    loop: true,
+    //true or false - should the marquee be duplicated to show an effect of continues flow
+    duplicated: true
+});
+</script>
+<script>
+var intervalId = setInterval(function() {
+    var timoutId = setTimeout(function() {
+
+        if ($(".borderImage2").hasClass("borderImage2")) {
+            $(".borderImage2").removeClass('borderImage2').addClass('borderImagerep')
+        } else {
+            $(".borderImagerep").removeClass('borderImagerep').addClass('borderImage2')
+        }
+    }, 1000);
+}, 1000);
+
+// live darshan 
+function checkValidate_live() {
+    var phone_number = document.getElementById('phone');
+    var email = document.getElementById('live_email');
+
+    form = $("#live_request_form").serialize();
+    $.ajax({
+        type: "POST",
+        url: "https://www.krishnayangauraksha.org/live_visit",
+        dataType: "json",
+        data: form,
+        beforeSend: function() {
+            $('#livesubmit').prop('disabled', true);
+            $('#livesubmit').text('wait...');
+        },
+        success: function(response) {
+            $('#livesubmit').prop('disabled', false);
+            $('#livesubmit').text('Submit');
+            if (response.status === "error") 
+            {
+                var count = 0;
+                $.each(response, function(key, value) {
+                    if (key != 'error') {
+                        $("." + key).html(value);
+                        if (count == 0 && value != "") {
+                            $("." + key).parent().find('input').focus()
+                            count++;
+                        }
+                    }
+                });
+            } else {
+                if (response.status === "success")  
+                {
+                    document.getElementById("live_request_form").reset();
+                    $(".text-danger2").html('');
+                    $('#live_status').html(response.msg)
+                } else {
+                    $('#live_status').html(response.msg)
+                }
+            }
+        }
+    });
+    event.preventDefault();
+    return false; //stop the actual form post !important!
+}
+// subscribe footer
+function subscribeUser() {
+    var user_email = $("#user_email").val();
+
+    $.ajax({
+        type: 'POST',
+        dataType: "json",
+        url: 'https://www.krishnayangauraksha.org/subscribe-user',
+        data: {
+            "csrf_test_name":'507e97488e64af4e612d278199781768',
+            'user_email': user_email
+        },
+        beforeSend: function() {
+            $("#footer-subscribe-btn").html('Please wait...').attr("disabled", true);
+        },
+        success: function(data) {
+            $("#footer-subscribe-btn").html('Submit').attr("disabled", false);
+            $("#subscribe-message").html(data.msg);
+            if (data.status == 1) {
+                $("#user_email").val('');
+            }
+        }
+    });
+}
+</script>
+
+
+<script>
+window.onload = function() {
+    google.accounts.id.initialize({
+        client_id: '967563326921-t5sjvp722cf1nd9cvm726114rhbq40lh.apps.googleusercontent.com',
+        callback: handleCredentialResponse
+    });
+
+    google.accounts.id.prompt();
+    $("div#handle-preloader").css('display', 'none');
+};
+
+function handleCredentialResponse(response) {
+    if (response.credential) {
+        const csrfTokenName = 'csrf_test_name';
+        const csrfTokenHash = '507e97488e64af4e612d278199781768';
+        // Send the credential to your server for processing
+        var formData = new FormData();
+        formData.append('credential', response.credential);
+        formData.append(csrfTokenName, csrfTokenHash); // Add CSRF token dynamically
+
+        fetch('/google_login', {
+                method: 'POST',
+                body: formData
+            })
+            .then(window.location.reload())
+            .then(data => {
+                // Handle the response from your server after processing the credential
+
+            })
+            .catch(error => {
+                console.error('Error processing credential', error);
+            });
+    }
+}
+
+
+
+$(document).ready(function() {
+    });
+
+function login_page_sesssion() {
+    $.ajax({
+        type: 'POST',
+        //dataType: "json",
+        url: 'https://www.krishnayangauraksha.org/loginPage.html',
+        data: {
+            "csrf_test_name":'507e97488e64af4e612d278199781768',
+            'current_url': "https://www.krishnayangauraksha.org/donation-form.html"
+        },
+        success: function(data) {
+            if (data != '') {
+                window.location.href = 'https://accounts.google.com/o/oauth2/v2/auth?response_type=code&amp;access_type=online&amp;client_id=936841096520-qjcj3i13u3205qc5631ipej73pc7tpvs.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fwww.krishnayangauraksha.org%2Fdonation-form.html&amp;state&amp;scope=email%20profile&amp;approval_prompt=auto';
+            }
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+            alert('error');
+            return false;
+        }
+    });
+}
+
+function get_cartItems(cart_event)
+{
+    $.ajax({
+        type: 'POST',
+        url: "https://www.krishnayangauraksha.org/cart_list",
+        data: {
+            "csrf_test_name":'507e97488e64af4e612d278199781768'
+        },
+        success: function(response) {
+            var data = JSON.parse(response);
+            const other_details = {
+                "total_price" : $("#enteramt").val(),
+                "tithi_name" : "Krishna Chaturdashi",
+                "festival_name" : "Masik Shivaratri",
+                "current_page" : "",
+                "cart_event" : cart_event,
+                "currency" : $("#currency_name").val(),
+                "event_type" : $("#eventtype_s").val()
+            }
+            pushDataLayer(data.cartitems,other_details);
+        }
+    });
+}
+</script>
+</body>
+
+<!-- Mirrored from www.krishnayangauraksha.org/donation-form.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 Mar 2025 02:15:48 GMT -->
+</html>
+<!-- Donation page js-->
+
+<script src="../unpkg.com/%40lottiefiles/lottie-player%402.0.12/dist/lottie-player.js"></script>
+<script type="text/javascript" src="assets/vendors/jquery-mask/jquery.mask.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.email-autocomplete.js"></script>
+<!-- Jquery plugin cdn link to validate the form -->
+<script src="../cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+<script src="../code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#country_name').trigger('change');
+});
+
+function checkAmount(amount) {
+    var payment_type = $('#payment_type').val();
+    if ((amount < 10 || amount > 999999 || amount == 0 || amount < 0 || isNaN(amount)) && payment_type == 1 && amount !=
+        '') {
+        $(".error-amount-enteramt").html("Donation amount should be minimum 10 and maximum 999999");
+    } else if ((amount < 1 || amount > 999999 || amount == 0 || amount < 0 || isNaN(amount)) && payment_type == 2 &&
+        amount != '') {
+        $(".error-amount-enteramt").html("Donation amount should be minimum 1 and maximum 999999");
+    } else {
+        $(".error-amount-enteramt").html("");
+    }
+
+}
+
+function monthlydonation() {
+    $(".hidemonthlymsg").hide(300);
+    $(".monthlydonation").addClass("active");
+    $(".onetimedonation").removeClass("active");
+    $(".animatedarrow").css('opacity', 0);
+    $(".mdifc").text("Monthly Donation in Foreign Currency");
+    //$(".paymentlabel").text("Only Banks & Cards");
+    $(".mpindcr").text("Monthly Donation in Indian Currency");
+    $("#paymentlinks").hide();
+    $("#event_type_div").hide();
+    $("#cause_div").show();
+    $("#donation_type").val('2');
+    if ($("#currency_name").val() == 'INR') {
+        $("#razorpay_as_wish_options").show();
+    }
+}
+
+function onetimedonation() {
+    $(".hidemonthlymsg").show(300);
+    $(".onetimedonation").addClass("active");
+    $(".monthlydonation").removeClass("active");
+    $(".animatedarrow").css('opacity', 1);
+    //$(".paymentlabel").text("Please Choose Currency type");
+    $(".mpindcr").text("Payment in INR");
+    $(".mdifc").text("International Payment");
+    $("#paymentlinks").show();
+    if ($('#currency_name').val() != 'INR') {
+        $("#paymentlinks").hide();
+    }
+    $("#donation_type").val('1');
+    $("#event_type_div").show();
+    $("#cause_div").hide();
+    $("#razorpay_as_wish_options").hide();
+}
+/** Validate input only for numbers */
+
+function isNumberKey(evt) {
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    var value = String.fromCharCode(evt.which) || evt.key;
+    var target_id = evt.target.id;
+    var regExp = /[0-9]/;
+    var self = $("#" + target_id);
+    self.val(self.val().replace(/\D/g, ""));
+
+    if ((charCode > 31 && (charCode < 48 || charCode > 57)) || !regExp.test(value)) {
+        evt.preventDefault();
+        $(".error-amount-" + target_id).fadeIn().html("Plessase enter value only in numbers");
+        return false;
+    }
+    $(".error-amount-" + target_id).html("");
+    return true;
+}
+
+$('.numberonly').on('input', function(event) {
+    this.value = this.value.replace(/[^0-9]/g, '');
+});
+
+
+/** Validate Mobile */
+function validateMobile(mobile) {
+    var isd_code = $("#isd_code").val();
+    if ((isd_code == '91' && mobile.length != 10) && mobile.length != 0) {
+        $(".error-amount-user_phonenumber").fadeIn().html("Phone number should be 10 digits.");
+        return false;
+    } else {
+        if ((mobile.length < 8 || mobile.length > 13) && mobile.length != 0) {
+            $(".error-amount-user_phonenumber").fadeIn().html("Phone number must be between 8 and 13 digits.");
+            return false;
+        } else {
+            $(".error-amount-user_phonenumber").html("");
+        }
+    }
+}
+/** Validate Pincode */
+function validatePincode() {
+    var pincode = $('#Pincode_s').val();
+    var country = $('#country_name').val();
+    if ((country == 'India' && pincode.length != 6) && pincode.length != 0) {
+        $(".error-Pincode_s").fadeIn().html("The pincode value should be 6 digits.");
+        return false;
+    } else {
+        if ((pincode.length < 4 || pincode.length > 10) && pincode.length != 0) {
+            $(".error-Pincode_s").fadeIn().html("The pincode value should be minimum 4 and maximum 10 digits.");
+            return false;
+        } else {
+            $(".error-Pincode_s").html("");
+        }
+
+    }
+}
+
+/** 21 May 2023 */
+// Set custom language translation for Select2
+$.fn.select2.amd.define('select2/i18n/custom', [], function() {
+    // Define your custom translation object
+    return {
+        noResults: function() {
+            return 'No record found. Please enter name above.';
+        },
+    };
+});
+
+$('#Pincode_s').on('input', function() {
+
+    var countrydrop = $('#country_name');
+    var statedrop = $('#state_name');
+    var citydrop = $('#city_name');
+    // get the value of the input field
+    var pincode = $(this).val();
+
+    // check if the length is more than 6
+    if (pincode.length > 5) {
+        $('.typecity').hide();
+        $('.selectcity').show();
+        $('.selectstate').show();
+        $('.typeoptionalcity').show();
+        if ($("#addaddress").prop("checked") == false) {
+            $("#addaddress").click();
+        }
+        // make an AJAX call to the API to fetch the data
+        $.ajax({
+            url: 'https://api.postalpincode.in/pincode/' + pincode,
+            type: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                console.log(data)
+                // check if data is available
+                if (data && data[0].Status != 'Error') {
+                    var country_val = data[0].PostOffice[0].Country;
+                    var state_val = data[0].PostOffice[0].State;
+                    var cuurent_country = $('#country_name').val();
+                    var address_val = "District: " + data[0].PostOffice[0].District;
+                    $("#floatingTextarea").val(address_val)
+                    $('#country_name option').each(function() {
+                        if ($(this).val() === country_val) {
+                            $(this).prop('selected', true);
+                            return false; // Exit the loop
+                        }
+                    });
+                    var passedvariable = 1;
+                    $('#country_name').trigger('change', [passedvariable, state_val]);
+
+                    $(citydrop).find('option').remove();
+                    const names = data[0].PostOffice.map(location => location.Name);
+                    const selectData = names.map((name, index) => ({
+                        id: name,
+                        text: name
+                    }));
+                    // /  $(citydrop).select2({data: selectData,});
+                    var select2_option = {
+                        data: selectData,
+                        tags: true,
+                        language: 'custom'
+                    }
+                    $(citydrop).select2("destroy").select2(select2_option);
+                } else {
+                    $(citydrop).find('option').remove();
+                }
+            },
+            error: function(error) {
+                console.log('Error:', error);
+            }
+        });
+    } else {
+        $('.typecity').show();
+        $('.selectcity').hide();
+        $('.typeoptionalcity').hide();
+
+    }
+});
+
+/** On State Change  */
+$('#state_name').on('change', function(event) {
+    var state_val = $('#state_name').val();
+    var country = $('#country_name').val();
+    var pincode_val = $('#Pincode_s').val();
+    if (state_val != '') {
+
+        if (country == 'India' && pincode_val != '') {
+            $('.typecity').hide();
+            $('.selectcity').show();
+            $('.typeoptionalcity').show();
+        } else {
+            $('.typecity').show();
+            $('.selectcity').hide();
+            $('.typeoptionalcity').hide();
+        }
+    } else {
+
+        $('.typecity').hide();
+        $('.selectcity').hide();
+        $('.typeoptionalcity').hide();
+    }
+
+});
+
+/** On Country Change fetch state */
+
+$('#country_name').on('change', function(event, passedVariable, state_val) {
+
+    if (passedVariable != 2) {
+        var country = $('#country_name').val();
+        if (country != 'India') {
+            $cur = $("#currency_name").val();
+            if ($cur == "INR") {
+                $('.error-currency').html('Change Currency');
+                $('.error-currency3').html('Change Currency from Top');
+                $('#currency_name').css({
+                    'color': 'red'
+                });
+            } else {
+                $('.error-currency , .error-currency3').html('');
+                $('#currency_name').css({
+                    'border': '',
+                    'color': ''
+                });
+            }
+        }
+        if (country == 'India') {
+            $cur = $("#currency_name").val();
+            if ($cur != "INR") {
+                $('.error-currency').html('Change Currency');
+                $('.error-currency3').html('Change Currency from Top');
+                $('#currency_name').css({
+                    'color': 'red'
+                });
+            } else {
+                $('.error-currency , .error-currency3').html('');
+                $('#currency_name').css({
+                    'border': '',
+                    'color': ''
+                });
+            }
+        }
+
+        $('#state_name').find('option').remove();
+        var url = "donation-form.html";
+        if (country != "") {
+            $.ajax({
+                data: {
+                    "csrf_test_name":'507e97488e64af4e612d278199781768', 
+                    country: country
+                },
+                url: url,
+                type: 'POST',
+                dataType: 'json',
+                success: function(response) {
+                    var len = response.length;
+                    $('#state_name').append('<option value="">Please Select</option>');
+                    for (var i = 0; i < len; i++) {
+                        var cname = response[i]['name'];
+                        $('#state_name').append('<option value="' + response[i]['name'] + '" >' +
+                            response[i]['name'] + '</option>');
+                    }
+
+                    var select2_option = {
+                        width: "100%",
+                        theme: 'bootstrap-5'
+                    }
+                    if (country != 'India') {
+                        select2_option = {
+                            width: "100%",
+                            tags: true,
+                            maximumInputLength: 30,
+                            theme: 'bootstrap-5'
+                        }
+
+                        $('.typecity').show();
+                        $('.selectcity').hide();
+                        $('.typeoptionalcity').hide();
+                    }
+                    $(".state-select2").select2("destroy").select2(select2_option);
+                    if (state_val != '') {
+                        $('#state_name option').each(function() {
+                            if ($(this).val() === state_val) {
+                                $(this).prop('selected', true);
+                                return false; // Exit the loop
+                            }
+                        });
+
+                        $('#state_name').trigger('change');
+                    }
+
+                    validatePincode();
+                }
+            });
+        }
+    }
+});
+
+/** 21 May 2023 ENd */
+
+/** Validate Email */
+function validateEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if (email == '') {
+        $(".error-email").fadeIn().html("Please enter a valid email address.");
+    } else if (email != '' && regex.test(email) == false) {
+        $(".error-email").fadeIn().html("Please enter a valid email address.");
+    } else {
+        $.ajax({
+            data: {
+                "csrf_test_name":'507e97488e64af4e612d278199781768',
+                email: email
+            },
+            url: "https://www.krishnayangauraksha.org/emailvalidate.html",
+            type: 'POST',
+            success: function(response) {
+                $("#email_is_validate").val(response)
+                if (response == 1) {
+                    $(".error-email").html("");
+                } else {
+                    $(".error-email").html("Please enter correct email for future communication");
+                }
+            }
+        });
+        //document.getElementById("Pincode_s").focus();
+    }
+}
+$(document).ready(function() {
+    // hide address if address already filled
+    $('.reviewaddress').click(function() {
+        if ($(this).prop("checked") == true) {
+            $(".reivewaddressbox").show();
+        } else if ($(this).prop("checked") == false) {
+            $(".reivewaddressbox").hide();
+        }
+    });
+    // hide address if address already filled
+
+    /** Complete Address Input Show & Hide */
+    $('.addaddress').click(function() {
+        if ($(this).prop("checked") == true) {
+            $(".addfulladdress").show();
+        } else if ($(this).prop("checked") == false) {
+            $(".addfulladdress").hide();
+        }
+    });
+
+    
+    /** Complete Event details Input Show & Hide */
+    $('.eventdateremark').click(function() {
+        if ($(this).prop("checked") == true) {
+            $(".eventsection").show();
+        } else if ($(this).prop("checked") == false) {
+            $(".eventsection").hide();
+        }
+    });
+
+    /** Complete Event details Input Show & Hide */
+    $('.enterpancheck').click(function() {
+        if ($(this).prop("checked") == true) {
+            $(this).parent().hide();
+            $(".pancardsection").show();
+        } else if ($(this).prop("checked") == false) {
+            $(".pancardsection").hide();
+        }
+    });
+
+    /** Autocomplete Domain Name */
+    $("#emailaddress").emailautocomplete({
+        domains: ["codefixup.com", "ymail.com", "yahoo.com", "hotmail.com", "gmail.com", "outlook.com",
+            " rediffmail.com", "yahoo.co.in"
+        ] //add your own domains
+    });
+
+    /** One time payment gateway active or Inactive */
+    $(".chbpay").change(function() {
+        $(".chbpay").prop('checked', false);
+        $(this).prop('checked', true);
+        $(this).closest('li').addClass("active").siblings().removeClass("active");
+    });
+
+
+    /** Top Right Menu Toggle*/
+    $('.openmenu').click(function() {
+        $('.nav-side-menu').css('right', '0px');
+        $('.overlaydiv').css('display', 'block');
+        $('.mobile-position').css('display', 'block');
+    });
+
+    $('.close-icon, .overlaydiv').click(function() {
+        $('.nav-side-menu').css('right', '-300px');
+        $('.overlaydiv').css('display', 'none');
+        $('.mobile-position').css('display', 'none');
+    });
+
+
+
+
+    // New code for filter by contry name
+    const countList = $('.iti__country-list');
+
+    function showFilterInstdInput() {
+        $(countList).prepend(
+            "<div onclick='showbox()' class='postion-sticky top-0'><input type='text' class='form-control filterbn w-100 ps-2' placeholder='Search by Country Name'></div>"
+        );
+    }
+
+    function showbox() {
+        $(countList).addClass("d-block");
+    }
+
+
+    showFilterInstdInput();
+
+    $('.iti__country').on('click', function() {
+        $(countList).removeClass("d-block");
+    })
+
+    $(".filterbn").on("keyup", function() {
+        var value = $(this).val().toLowerCase().trim();
+        var v = value.split("%");
+        $(".iti__country-list li").each(function(j, k) {
+            var s = true;
+            $.each(v, function(i, x) {
+                if (s) {
+                    s = $(k).text().toLowerCase().indexOf(x) > -1;
+                }
+            });
+            $(this).toggle(s);
+        });
+    });
+    // date masking
+    $(function() {
+        $(".date").datepicker({
+            dateFormat: 'dd-mm-yy',
+            changeMonth: true,
+            changeYear: true
+        });
+    });
+    // select option search filter	
+    $('.select2, .state-select2').select2({
+        width: "100%",
+        theme: 'bootstrap-5'
+    });
+    $('.city-select2').select2({
+        width: "100%",
+        tags: true,
+        language: 'custom',
+        theme: 'bootstrap-5'
+    });
+
+    
+    var phoneinput1 = document.querySelector(".phonenumber1");
+    var iti = window.intlTelInput(phoneinput1, {
+        initialCountry: "in", // Set the initial country code to +1.
+        preferredCountries: ['in', 'us', 'ca', 'uk', 'uae', 'nz', 'au'],
+        separateDialCode: true,
+        // utilsScript: "https://www.krishnayangauraksha.org/new-assets/vendors/iti/js/utils.js",
+        customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
+            return "Mobile Number";
+        },
+        nationalMode: false, // Disable national mode (this may prevent automatic formatting)
+        formatOnDisplay: false, // Disable formatting on display
+        autoPlaceholder: "off" // Disable automatic placeholder formatting
+    });
+    phoneinput1.addEventListener("countrychange", function() {
+        var countryData = iti.getSelectedCountryData();
+        $("#isd_code").val(countryData.dialCode);
+        if (countryData.dialCode != '91') {
+            var cur = $("#currency_name").val();
+            if (cur == "INR") {
+                $('.error-currency').html('Change Currency');
+                $('.error-currency2').html('Change Currency from Top');
+                $('#currency_name').css({
+                    'color': 'red'
+                });
+            } else {
+                $('.error-currency, .error-currency2').html('');
+                $('#currency_name').css({
+                    'border': '',
+                    'color': ''
+                });
+            }
+        } else if (countryData.dialCode == '91') {
+            var cur = $("#currency_name").val();
+            if (cur != "INR") {
+                $('.error-currency').html('Change Currency');
+                $('.error-currency2').html('Change Currency from Top');
+                $('#currency_name').css({
+                    'color': 'red'
+                });
+            } else {
+                $('.error-currency, .error-currency2').html('');
+                $('#currency_name').css({
+                    'border': '',
+                    'color': ''
+                });
+            }
+        } else {
+            $('.error-currency, .error-currency2').html('');
+            $('#currency_name').css({
+                'border': '',
+                'color': ''
+            });
+        }
+
+        $("#country_name option[data-iso='" + countryData.iso2 + "']").prop("selected", true).trigger(
+            "change");
+        $(".error-amount-user_phonenumber").html("");
+    });
+});
+
+/** On Country Change fetch state */
+function fetchState() {
+    var country = $('#country_name').val();
+
+    $('#state_name').find('option').remove();
+    var url = "donation-form.html";
+    if (country != "") {
+        $.ajax({
+            data: {
+                "csrf_test_name":'507e97488e64af4e612d278199781768', 
+                country: country
+            },
+            url: url,
+            type: 'POST',
+            dataType: 'json',
+            success: function(response) {
+                var len = response.length;
+                $('#state_name').append('<option value="">Please Select</option>');
+                for (var i = 0; i < len; i++) {
+                    var cname = response[i]['name'];
+                    $('#state_name').append('<option value="' + response[i]['name'] + '" >' + response[i][
+                        'name'
+                    ] + '</option>');
+                }
+
+                var select2_option = {
+                    width: "100%",
+                    theme: 'bootstrap-5'
+                }
+                if (country != 'India') {
+                    select2_option = {
+                        width: "100%",
+                        tags: true,
+                        maximumInputLength: 30,
+                        theme: 'bootstrap-5'
+                    }
+                }
+                $(".state-select2").select2("destroy").select2(select2_option);
+                validatePincode();
+            }
+        });
+    }
+}
+
+/** Valide Pancard Length */
+function validatePanCard(pancard) {
+    var pancard_regex = /[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
+    if (pancard.length != 0 && (pancard.length != 10 || pancard_regex.test(pancard) == false)) {
+        $(".error-pancard").fadeIn().html("Please enter valid 10 value pan card number");
+        setTimeout(function() {
+            $(".error-pancard").html("");
+        }, 2000);
+        return false;
+    }
+}
+
+/** Validate Form */
+function validateForm() {
+    $("#proceedBTN").prop("disabled", true);
+    var amount = parseInt($("#enteramt").val().trim());
+    var fullname = $("#fullname").val().trim();
+    var email = $("#emailaddress").val().trim();
+    var phone = $("#user_phonenumber").val().trim();
+    var pancard = $("#pancard").val().trim();
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    var pancard_regex = /[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
+    var payment_type = $('#payment_type').val();
+    var payment_option = $('input[name="data[payment_option]"]:checked').val()
+    var isd_code = $("#isd_code").val();
+    var error = 0;
+    var form_type = $('#donation_type').val();
+    var pincode = $('#Pincode_s').val();
+    var country = $('#country_name').val();
+    var state = $('#state_name').val();
+    var currency_name = $('#currency_name').val();
+    var eventtype_s = $('#eventtype_s').val();
+
+    if ((country == 'India' && pincode.length != 6) && pincode.length != 0) {
+        $(".error-Pincode_s").fadeIn().html("The pincode value should be 6 digits.");
+        error++;
+    } else {
+        if ((pincode.length < 4 || pincode.length > 10) && pincode.length != 0) {
+            $(".error-Pincode_s").fadeIn().html("The pincode value should be minimum 4 and maximum 10 digits.");
+            error++;
+        } else {
+            $(".error-Pincode_s").html("");
+        }
+    }
+
+    if ((amount < 10 || amount > 999999 || amount == 0 || amount < 0 || amount == '' || isNaN(amount)) &&
+        payment_type == 1) {
+        error++;
+        $(".error-amount-enteramt").html("Donation amount should be minimum 10 and maximum 999999");
+        $("#enteramt").focus();
+    } else if ((amount < 1 || amount > 999999 || amount == 0 || amount < 0 || amount == '' || isNaN(amount)) &&
+        payment_type == 2) {
+        error++;
+        $(".error-amount-enteramt").html("Donation amount should be minimum 1 and maximum 999999");
+        $("#enteramt").focus();
+    } else {
+        $(".error-amount-enteramt").html("");
+    }
+
+    if (fullname == '' || fullname.length < 3 || fullname.length > 30) {
+        error++;
+        $(".error-fullname").html("Please enter a valid full name minimum of 3 and maximum of 30 characters.");
+        $("#fullname").focus();
+    } else {
+        $(".error-fullname").html("");
+    }
+    
+    if (isd_code == '91' && phone.length != 10) {
+        error++;
+        $(".error-amount-user_phonenumber").html("Phone number should be of 10 digits.");
+        $("#user_phonenumber").focus();
+    } else {
+        if (phone.length < 8 || phone.length > 13) {
+            error++;
+            $(".error-amount-user_phonenumber").html("Phone number must be between 8 and 13 digits.");
+            $("#user_phonenumber").focus();
+        } else {
+            $(".error-amount-user_phonenumber").html("");
+        }
+    }
+
+    if (regex.test(email) == false) {
+        error++;
+        $(".error-email").html("Please enter a valid email address.");
+        //$("#emailaddress").focus();
+    } else {
+        $(".error-email").html("");
+    }
+
+    if (country == '' || country == null) {
+        $(".error-country_name").fadeIn().html("Please select country");
+        error++;
+    } else {
+        $(".error-country_name").html("");
+    }
+
+    if (payment_type == 1) {
+        if (pancard.length != 0 && (pancard.length != 10 || pancard_regex.test(pancard) == false)) {
+            error++;
+            $(".error-pancard").html("Please enter valid 10 value pan card number");
+        } else {
+            $(".error-pancard").html("");
+        }
+    }
+
+    if (currency_name == null || currency_name == '') {
+        error++;
+        $(".error-currency").html("Please select currency");
+    } else {
+        $(".error-currency").html("");
+    }
+
+    if (currency_name != 'INR' && $('#donation_type').val() == 1) {
+        $("#scanqr1").click();
+    }
+
+    if ((payment_option == null || payment_option < 1) && form_type == 1) {
+        error++;
+        $(".error-paymentoption").html("Please select payment option to proceed.");
+    } else {
+        $(".error-paymentoption").html("");
+    }
+
+    if (error > 0) {
+        $("#proceedBTN").prop("disabled", false);
+        return false;
+    } else {
+        var payment_type = $('#payment_type').val();
+        var payment_option = $('input[name="data[payment_option]"]:checked').val();
+        var form_type = $('#donation_type').val();
+        var return_type = 'json';
+        if (form_type == 2) {
+            return_type = 'html';
+        }
+        get_cartItems("add_payment_info"); // ONly for SRV JS api
+        if ((form_type == 1 && payment_type == 2) || (form_type == 2 && payment_type == 2) || (form_type == 2 && payment_type == 1)) 
+        {
+            if(form_type == 2 && payment_type == 1)
+            { 
+                $("#newpaymentmodal").modal("show");
+                $("#proceedBTN").prop("disabled", false);
+                $('input[type="radio"]').click(function() {
+                    var selectedValue = $("input[name='btnradio']:checked").val();
+                    if(selectedValue != ''){
+                        $('#own_wish_wait').show();
+                        document.getElementById('payment_mode').value = selectedValue;
+                        $("#user-donation-form").submit();
+                    }else { return false; }
+                });
+            } else {
+                $("#user-donation-form").submit();
+            }
+        } else if (form_type == 1 && ((payment_type == 2 && payment_option == 4) || (payment_type == 1 &&
+                payment_option == 8) || (payment_type == 2 && payment_option == 9))) {
+            $("#user-donation-form").submit();
+        } else {
+            location.reload(); return false;
+            var form = $('#user-donation-form')[0];
+            var data = new FormData(form);
+            $.ajax({
+                url: 'https://www.krishnayangauraksha.org/submit_donation_form.html',
+                type: 'post',
+                data: data,
+                dataType: return_type,
+                processData: false,
+                contentType: false,
+                cache: false,
+                beforeSend: function() {
+                    $(".ekartbtn").text("Please Wait...").prop("disabled", true);
+                    $(".preloader, .handle-preloader").show();
+                },
+                success: function(response) {
+                    $(".ekartbtn").text("PROCEED").prop("disabled", false);
+                    $(".preloader, .handle-preloader").hide();
+                    if (response.error) {
+                        var count = 0;
+                        $.each(response, function(key, value) {
+                            if (key != 'error') {
+                                $("." + key).html(value);
+                                if (count == 0 && value != "") {
+                                    $("." + key).parent().find('input').focus()
+                                    count++;
+                                }
+                            }
+
+                        });
+                    } else {
+                        if (response.payment_option == 1 || response.payment_option == 3) {
+                            payuPayment(response);
+                        } else if (response.payment_option == 7) {
+                            $('#smart_collect_modal').modal('show');
+                            $('#va_beneficiary_name').text(response.beneficiary_name);
+                            $('#va_ifsc').text(response.ifsc);
+                            $('#va_accountNumber').text(response.accountNumber);
+                            $('#va_email').val(response.email);
+                        } else if (response.payment_option == 2) {
+                            document.getElementById('user-donation-form').reset();
+                            $('#qrcodeimage').modal('show');
+                            $("#qr_code_anchor").attr('href', response.qrcode_url);
+                            $("#qr_code_img").attr('src', response.qrcode_url);
+                        } else if (form_type == 2 && currency_name != 'INR' && response ==
+                            'redirect_passport') {
+                            window.location.href = 'donation-form.html';
+                        } else if (form_type == 2 && currency_name == 'INR') {
+                            jQuery('span#render-subscription-pay-info').html(response);
+                        }
+                    }
+
+                },
+                error: function(xhr, ajaxOptions, thrownError) {
+                    return false;
+                }
+            });
+            /** Form Submit End */
+        }
+
+
+
+    }
+
+}
+
+/** Validate Input to allow only alphabets */
+$(document).ready(function() {
+    getBrowserDetails("getbrowserdetails.html","csrf_test_name","507e97488e64af4e612d278199781768");
+
+    $(".txtOnly").on("keydown", function(event) {
+        // Allow controls such as backspace, tab etc.
+        var arr = [8, 9, 16, 17, 20, 35, 36, 37, 38, 39, 40, 45, 46, 32];
+        // Allow letters
+        for (var i = 65; i <= 90; i++) {
+            arr.push(i);
+        }
+        // Prevent default if not in array
+        if (jQuery.inArray(event.which, arr) === -1) {
+            event.preventDefault();
+        }
+    });
+
+    $('.txtOnly').on('input', function(event) {
+        this.value = this.value.replace(/[^a-zA-Z ]/g, '');
+    });
+
+    $('.pancardtxt').on('input', function(event) {
+        this.value = this.value.replace(/[^a-zA-Z0-9 ]/g, '');
+    });
+
+
+    /** For Zero key */
+    $("#user_phonenumber").on("input", function() {
+        if (/^0/.test(this.value)) {
+            this.value = this.value.replace(/^0/, "")
+        }
+    })
+
+});
+/** Payu Domestic Redirection Form */
+function payuPayment(res) {
+    var amount = res.amt;
+    var surl = $("#surl").val();
+    var furl = $("#furl").val();
+    var first_name = res.fname;
+    var last_name = res.lname;
+    var zipcode = res.zipcode;
+    var txnid = res.txnid;
+    var email = res.email;
+    var phone = res.phone;
+    var zipcode = res.zipcode;
+    var zipcode = res.zipcode;
+    var productinfo = "productinfo page domestic payu form";
+    var hash = res.hash;
+    var key = 'WbrlWY'; // domestic
+    if (res.payment_option == 3 && res.payment_type == 2) {
+        key = '5wcDoB'; //'k5My3T';
+        productinfo = 'P01,P02';
+    }
+
+    var fr = '<form action="https://secure.payu.in/_payment" id="payment_form_submit_domestic" method="post">' +
+        '<input type="hidden" id="udf5" name="udf5" value="PayUBiz_PHP7_Kit" />' +
+        '<input type="hidden" id="surl" name="surl" value="' + surl + '" />' +
+        '<input type="hidden" id="furl" name="furl" value="' + furl + '" />' +
+        '<input type="hidden" id="curl" name="curl" value="' + furl + '" />' +
+        '<input type="hidden" id="key" name="key" value="' + key + '" />' +
+        '<input type="hidden" id="txnid" name="txnid" value="' + txnid + '" />' +
+        '<input type="hidden" id="amount" name="amount" value="' + amount + '" />' +
+        '<input type="hidden" id="productinfo" name="productinfo" value="' + productinfo + '" />' +
+        '<input type="hidden" id="firstname" name="firstname" value="' + first_name + '" />' +
+        '<input type="hidden" id="Lastname" name="Lastname" value="' + last_name + '" />' +
+        '<input type="hidden" id="Zipcode" name="Zipcode" value="' + zipcode + '" />' +
+        '<input type="hidden" id="email" name="email" value="' + email + '" />' +
+        '<input type="hidden" id="phone" name="phone" value="' + phone + '" />' +
+        '<input type="hidden" id="Pg" name="Pg" value="CC" />' +
+        '<input type="text" id="hash" name="hash" value="' + hash + '" />' +
+        '</form>';
+
+    var form = jQuery(fr);
+    jQuery('body').append(form);
+    form.submit();
+}
+
+convertCurrencyAmount(); // this line for comming user from campaign page
+
+function convertCurrencyAmount(currency_type = '') {
+
+    $(".error-currency, .error-currency2, .error-currency3").html('');
+    $('#currency_name').css({
+        'border': '',
+        'color': ''
+    });
+
+    var currrency_type = $("#currency_name").val();
+    var payment_type_value = 1;
+    if (currrency_type != 'INR') {
+        payment_type_value = 2;
+        //$(".paymentgateway-text").text('International (Non Indian Bank & Cards)');
+        $(".paymentgateway-text").text('');
+        $("#indianinr").removeClass('d-none').addClass('d-block');
+        $("#paymentlinks").hide();
+        //$("#razorpay_int_new_li").removeClass('d-none').addClass('d-block');
+        $(".indian-paymentgateway").hide();
+        $(".international-paymentgateway").show();
+        $("#pancardcol").hide();
+        $("#scanqr1").click();
+        $("#razorpay_int_new").click();
+        $('#national-pincode').insertAfter('#international-pincode');
+        $("#razorpay_as_wish_options").hide();
+    } else {
+        $(".paymentgateway-text").text('Select payment mode (Only Indian bank & Cards)');
+        $("#indianinr").removeClass('d-block').addClass('d-none');
+        //$("#razorpay_int_new_li").removeClass('d-block').addClass('d-none');
+        $("#paymentlinks").show();
+        $(".indian-paymentgateway").show();
+        $(".international-paymentgateway").hide();
+        $("#pancardcol").show();
+        $("#onlinepay").click();
+                $('#country_name').val('India').trigger('change');
+                $('#national-pincode').insertAfter('#country-div');
+        if ($("#donation_type").val() == 2) {
+            $("#razorpay_as_wish_options").show();
+        }
+    }
+    $('#payment_type').val(payment_type_value);
+        return false;
+        var amount = $("#enteramt").val();
+    var currrency_type = $("#currency_name").val();
+
+    var payment_type = payment_type_value;
+    var payment_option = $('input[name="data[payment_option]"]:checked').val();
+    if (payment_type == 1) {
+
+        $("#enteramt").val("0");
+
+    } else {
+
+        var amount = 0;
+
+        $.ajax({
+            url: 'https://www.krishnayangauraksha.org/ajax_currency_converter.html',
+            type: 'post',
+            data: {
+                "csrf_test_name":'507e97488e64af4e612d278199781768', 
+                'amount': amount,
+                'currrency_type': currrency_type,
+                'payment_type': payment_type,
+                'payment_option': payment_option
+            },
+            dataType: 'json',
+
+            cache: false,
+            success: function(response) {
+                $("#enteramt").val(response);
+            },
+            error: function(xhr, ajaxOptions, thrownError) {
+                return false;
+            }
+        });
+    }
+
+}
+
+function empty_cart(id) {
+    $.ajax({
+        url: 'https://www.krishnayangauraksha.org/remove_cart.html',
+        type: 'POST',
+        data: {
+            "csrf_test_name":'507e97488e64af4e612d278199781768', 
+            'id': id
+        },
+        success: function(data) {
+            if (data == 2) {
+                location.reload();
+            }
+        }
+    });
+}
+
+$(document).ready(function() {
+        
+    // start Toggle text input based on selected value of eventtype
+    $('#eventtype_s').val('gausewa');
+    $('#eventtype_s').select2({
+        width: "100%",
+        theme: 'bootstrap-5'
+    }).trigger('change');
+    $('#eventtype_s').change(function() {
+        var selectedValue = $(this).val();
+        if (selectedValue === 'others') {
+            $('#input_event_type').show();
+            $('#dtype_occasion').val('');
+            $('#dtype_occasion_hide').hide();
+        } else if (selectedValue === 'occasion') {
+            $('#dtype_occasion_hide').show();
+            $('#input_event_type').val('');
+            $('#input_event_type').hide();
+        } else {
+            $('#input_event_type').val('');
+            $('#dtype_occasion').val('');
+            $('#input_event_type').hide();
+            $('#dtype_occasion_hide').hide();
+            $('.error-event_type').hide();
+        }
+    });
+    // End Toggle text input based on selected value of eventtype
+
+    
+    $("#onlinepay").click();
+
+    $('.copyTextIcon').click(function() {
+        var copyText = $(this).parent().find('span').text();
+        // copyText.select(); // for input box use
+        // copyText.setSelectionRange(0, 99999); // For mobile devices
+        navigator.clipboard.writeText(copyText); // for input box use copyText.value
+        alert("Copied the text");
+
+    });
+
+
+
+
+    var currentUrl = window.location.href;
+
+    if (currentUrl.indexOf('monthly') !== -1) {
+        monthlydonation();
+    }
+    if (currentUrl.indexOf('one-time') !== -1) {
+        onetimedonation();
+    }
+
+    if (currentUrl.indexOf('donation-form') !== -1) {
+        $("body").addClass("donationpg");
+    }
+});
+
+document.getElementById("enteramt").onblur = function() 
+{
+    let amt = $("#enteramt").val();
+    if(amt >= 2000){ $("#enterpancheck").click(); }
+}
+$("document").ready(function(){
+    });
+
+$("#cls_mothly_inr_popup").click(function() {
+    $('#own_wish_wait').hide();
+    $("#newpaymentmodal").modal("hide");
+})
+
+</script>

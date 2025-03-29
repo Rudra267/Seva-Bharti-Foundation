@@ -1,0 +1,17 @@
+
+@media screen and (max-width: 998px) {
+    
+.header-2 {
+    justify-content: space-between !important;
+}
+
+
+.heroslider .hrone p{
+    color: #fff;
+}
+    
+.heroslider .hrone{
+    width: fit-content;
+    padding: 10px !important;
+}
+}
