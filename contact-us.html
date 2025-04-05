@@ -50,6 +50,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Allura&amp;display=swap" rel="stylesheet">
   </head>
   <body>
+
+
+    <div class="bg-mobform">
+      <div class="form-container" id="sevaForm">
+      <span class="close-btn" onclick="toggleForm()">&times;</span>
+      <h2>Register for Online Seva Visit</h2>
+      <input type="text" placeholder="Full Name*" required>
+      <input type="email" placeholder="Email Address*" required>
+      <input type="tel" placeholder="Mobile Number*" required>
+      <input type="date" required>
+      <select required>
+          <option value="">Select Time</option>
+          <option value="Morning">Morning</option>
+          <option value="Afternoon">Afternoon</option>
+          <option value="Evening">Evening</option>
+      </select>
+      <textarea placeholder="Message"></textarea>
+      <button class="submit-btn">Submit</button>
+  </div>
+  </div>
+
+
     <div class="modal fade" id="listpopup" tabindex="-1" aria-labelledby="listpopup" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" style="max-width: 500px;">
           <div class="modal-content mymd">
@@ -365,7 +387,7 @@
                       <div class="header-panel">
                                                   <div class="d-flex align-items-center justify-content-end gap-4 me-md-3">
                               <div data-bs-target="#online-gaushala-visit" data-bs-toggle="modal"
-                                  class="text-white  burst-12 "> <span>Book a Slot</span></div>
+                                  class="text-white  burst-12 "> <span>Online Seva Visit</span></div>
                               
                                                       </div>
                                               </div>
@@ -485,20 +507,20 @@
 
 
 <div class="mobile-nav  d-md-none ">
-  <ul>
-      <li>
-          <a class="showdonatemobilemenu" data-bs-toggle="offcanvas" href="./donate.html">
-            <i class="fa-solid fa-hand-holding-dollar"></i> <span>Donate</span>
-          </a>
-      </li>
-      <li><a href="#adoptcanvas" data-bs-toggle="offcanvas"><i class="fa-solid fa-circle-info"></i> <span>About Us</span></a></li>
-      <li><a href="./gallery.html"> <i class="fa-solid fa-image"></i> <span>Gallery</span></a></li>
-      <!-- <li class="android-hide hide-in-ios"><a href="https://gwala.krishnayangauraksha.org/Donor/Astrology"><i
-                  class="fa-regular fa-solar-system"></i> <span>Astrology</span></a></li> -->
-      <!-- <li id="li_Astrology"><a href="../Donor/astrology_mobile"><i class="fa-light fa-solar-system"></i> <span>Astrology</span></a></li> -->
-      <li><a href="#menucanvas" data-bs-toggle="offcanvas"><i class="fa-solid fa-bars"></i> <span>Menu</span></a></li>
-      
-  </ul>
+    <ul>
+        <li>
+            <a class="showdonatemobilemenu" data-bs-toggle="offcanvas" href="./donate.html">
+              <i class="fa-solid fa-hand-holding-dollar"></i> <span>Donate</span>
+            </a>
+        </li>
+        <li class="toggle-btn" onclick="toggleForm()"><a><i class="fa-solid fa-circle-info"></i> <span>Online Seva Visit</span></a></li>
+        <li><a href="./Be_a_Volunteer.html"> <i class="fa-solid fa-image"></i> <span>Be a volunteer</span></a></li>
+        <!-- <li class="android-hide hide-in-ios"><a href="https://gwala.krishnayangauraksha.org/Donor/Astrology"><i
+                    class="fa-regular fa-solar-system"></i> <span>Astrology</span></a></li> -->
+        <!-- <li id="li_Astrology"><a href="../Donor/astrology_mobile"><i class="fa-light fa-solar-system"></i> <span>Astrology</span></a></li> -->
+        <li><a href="#menucanvas"  data-bs-toggle="offcanvas"><i class="fa-solid fa-bars"></i> <span>Menu</span></a></li>
+        
+    </ul>
 </div>
 
 <div class="offcanvas offcanvas-start" tabindex="-1" id="adoptcanvas">

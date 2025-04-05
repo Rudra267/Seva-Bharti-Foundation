@@ -665,3 +665,13 @@ const tooltipList = [...tooltipTriggerList].map(
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
+
+
+function toggleForm() {
+  var form = document.getElementById("sevaForm");
+  if (form.style.display === "block") {
+      form.style.display = "none";
+  } else {
+      form.style.display = "block";
+  }
+}
