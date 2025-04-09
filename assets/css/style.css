@@ -1797,3 +1797,9 @@ border-radius: 50px;
   cursor: pointer;
   color: #ff5722;
 }
+
+@media (max-width:700px){
+  .service-data-container > p{
+    font-size: small;
+  }
+}
