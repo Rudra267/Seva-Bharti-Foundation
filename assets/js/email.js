@@ -32,8 +32,8 @@ function sendEmail() {
         console.log(bodyMessage);
 
         const param = {
-            to_name: "SBF - Donor Contact Information",
-            from_name: "SBF - Donor Contact Information",
+            to_name: " Solar Kranthi Contact Information",
+            from_name: "Solar Kranthi Contact Information",
             message: bodyMessage
         };
 
