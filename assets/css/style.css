@@ -1805,16 +1805,20 @@ border-radius: 50px;
 }
 
 .btn-cmt{
+  min-width: 170px;
+  max-width: 170px;
   cursor: pointer;
+  border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
   /* border: 2px dashed #fff; */
-  border-radius: 10px;
+  /* border-radius: 10px; */
   position: relative;
   overflow: hidden;
-    transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
 }
 .btn-cmt::before{
   left: 0;
@@ -1825,7 +1829,20 @@ border-radius: 50px;
   background: #e9ad083f;
   transition: all 0.2s ease;
 }
+.btn-cmt::after{
+  font-size: 20px;
+  content: "🡥";
+  position: absolute;
+  right: 15px;
+  transition: all 0.2s linear;  
+}
+.btn-cmt:hover{
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* deeper shadow on hover */
+}
 .btn-cmt:hover::before{
 width: 100%;
+}
+.btn-cmt:hover::after{
+  transform: rotate(45deg);
 }
 

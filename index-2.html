@@ -81,20 +81,34 @@
 
 <div class="bg-mobform">
     <div class="form-container" id="sevaForm">
-    <span class="close-btn" onclick="toggleForm()">&times;</span>
-    <h2>Register for Online Seva Visit</h2>
-    <input type="text" placeholder="Full Name*" required>
-    <input type="email" placeholder="Email Address*" required>
-    <input type="tel" placeholder="Mobile Number*" required>
-    <input type="date" required>
-    <select required>
-        <option value="">Select Time</option>
-        <option value="Morning">Morning</option>
-        <option value="Afternoon">Afternoon</option>
-        <option value="Evening">Evening</option>
-    </select>
-    <textarea placeholder="Message"></textarea>
-    <button class="submit-btn">Submit</button>
+      <form method="POST" class="contact-form" id="contactForm">
+
+        <span class="close-btn" onclick="toggleForm()">&times;</span>
+        <h2>Register for Online Seva Visit</h2>
+        <input id="fname" type="text" placeholder="Full Name*" required>
+        <input id="email" type="email" placeholder="Email Address*" required>
+        <input id="phone" type="tel" placeholder="Mobile Number*" required>
+        <input id="date" type="date" required>
+        <select id="time_slot" required>
+          <option selected disabled value="">Select Time</option>
+          <option value="7am - 8am">7am - 8am</option>
+          <option value="8am - 9am">8am - 9am</option>
+          <option value="2pm - 3pm">2pm - 3pm</option>
+          <option value="3pm - 4pm">3pm - 4pm</option>
+          <option value="4pm - 5pm">4pm - 5pm</option>
+        </select>
+        <select id="reason_event" required>
+          <option selected disabled value="">Reason for Booking event</option>
+          <option value="Birthday">Birthday</option>
+          <option value="Anniversary">Anniversary</option>
+          <option value="For Family">For Family</option>
+          <option value="Others">Others</option>
+        </select>
+        <textarea id="message" aceholder="Message"></textarea>
+        <div style="text-align: center;" class="submit-btn" onclick="sendEmail()" >Submit</div>
+
+      </form>
+ 
 </div>
 </div>
 
@@ -218,7 +232,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </li>
             
                 <li>
-                    <a class="collapsed accordion-button" data-bs-target="#abc36" data-bs-toggle="collapse" aria-expanded="false">
+                    <a href="about.html" class="collapsed accordion-button" data-bs-target="#abc36" data-bs-toggle="collapse" aria-expanded="false">
                         <i class="fa-solid fa-circle-info"></i> About Us
                     </a>
                     <ul class="accordion-collapse collapse" data-bs-parent="#menu-content" id="abc36">
@@ -288,7 +302,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
           <!-- About Us (With Submenu) -->
           <li class="menu-item">
-            <a class="menu-link accordion-button collapsed" data-bs-toggle="collapse" href="#aboutMenu" aria-expanded="false">
+            <a  class="menu-link accordion-button collapsed" data-bs-toggle="collapse" href="about.html" aria-expanded="false">
               <i class="fa-solid fa-info-circle"></i> About Us
             </a>
             <ul class="submenu accordion-collapse collapse" id="aboutMenu">
@@ -384,7 +398,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
         <!-- About Us (With Submenu) -->
         <li class="menu-item">
-          <a href="#aboutMenu" class="menu-link main-menu" >
+          <a href="about.html" class="menu-link main-menu" >
             <!-- <i class="fa-solid fa-info-circle"></i> -->
              About Us
           </a>
@@ -401,6 +415,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              Our Services
           </a>
           <ul class="submenu accordion-collapse collapse" id="servicesMenu">
+            <li><a href="./feed_a_cow.html" class="submenu-link">Feed a Cow</a></li>
             <li><a href="./Orphanage.html" class="submenu-link">Orphanage</a></li>
             <li><a href="./Old_Age_Home.html" class="submenu-link">Old Age Home</a></li>
             <li><a href="./Education_Recreation.html" class="submenu-link">Education & Recreation</a></li>
@@ -498,7 +513,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       </div>
                     <div class="header-panel">
                                                 <div class="d-flex align-items-center justify-content-end gap-4 me-md-3">
-                            <div data-bs-target="#online-gaushala-visit" data-bs-toggle="modal"
+                            <div onclick="toggleForm()"
                                 class="text-white  burst-12 "> <span>Book an event</span></div>
                             
                                                     </div>
@@ -525,7 +540,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="hrone">
                                 <h2>Bringing Smiles, Changing Lives</h2>
                                 <p class="mb-0 add-moverlay"> Supporting orphans and the elderly with love and care.</p>
-                                <a href="#" class="btn-dark btn mt-4"><i
+                             <a href="donate.html" class="btn-dark btn mt-4">Help Now<i
                                 class="fa-solid fa-arrow-right ms-2 "></i></a>
                             </div>
                         </div>
@@ -554,15 +569,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="swiper-slide h-auto">
                 <div class="card">
                     <div class="card-body p-0">
-                        <a href="medical-help-2.html">
-                            <img alt="Rescuing & Caring for Gauvansh" src="./Slider/2.png"  width="1587" height="555" class="w-100 d-none d-md-block">
-                            <img alt="Rescuing & Caring for Gauvansh" src="./Slider/m3.png" width="414" height="497" class="w-100 d-md-none">
+                        <a href="donate.html">
+                            <img alt="Rescuing & Caring for Gauvansh" src="./Slider/6.png"  width="1587" height="555" class="w-100 d-none d-md-block">
+                            <img alt="Rescuing & Caring for Gauvansh" src="./Slider/m5.png" width="414" height="497" class="w-100 d-md-none">
                         </a>
                         <div class="herocontent">
                             <div class="hrone">
                                 <h2>A Home for the Abandoned, Hope for the Forgotten</h2>
                                 <p class="mb-0 add-moverlay">Providing shelter and dignity to those in need.</p>
-                                <a href="medical-help-2.html" class="btn-dark btn mt-4">Help Now<i
+                                <a href="donate.html" class="btn-dark btn mt-4">Help Now<i
                                 class="fa-solid fa-arrow-right ms-2 "></i></a>
                             </div>
                         </div>
@@ -572,15 +587,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="swiper-slide h-auto">
                 <div class="card">
                     <div class="card-body p-0">
-                        <a href="medical-help-2.html">
-                            <img alt="Rescuing & Caring for Gauvansh" src="./Slider/4.png"  width="1587" height="555" class="w-100 d-none d-md-block">
+                        <a href="donate.html">
+                            <img alt="Rescuing & Caring for Gauvansh" src="./Slider/5.png"  width="1587" height="555" class="w-100 d-none d-md-block">
                             <img alt="Rescuing & Caring for Gauvansh" src="./Slider/m4.png" width="414" height="497" class="w-100 d-md-none">
                         </a>
                         <div class="herocontent">
                             <div class="hrone">
                                 <h2>Nurturing Lives, Empowering Futures</h2>
                                 <p class="mb-0 add-moverlay">Education, healthcare, and opportunities for a better tomorrow.</p>
-                                <a href="medical-help-2.html" class="btn-dark btn mt-4">Help Now<i
+                                <a href="donate.html" class="btn-dark btn mt-4">Help Now<i
                                 class="fa-solid fa-arrow-right ms-2 "></i></a>
                             </div>
                         </div>
@@ -591,14 +606,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="card">
                     <div class="card-body p-0">
                         <a href="food-distribution-2.html">
-                            <img alt="Food Distribution Initiatives" src="./Slider/5.png"  width="1587" height="555" class="w-100 d-none d-md-block">
-                            <img alt="Food Distribution Initiatives" src="./Slider/m5.png" width="414" height="497" class="w-100 d-md-none">
+                            <img alt="Food Distribution Initiatives" src="./Slider/4.png"  width="1587" height="555" class="w-100 d-none d-md-block">
+                            <img alt="Food Distribution Initiatives" src="./Slider/m3.png" width="414" height="497" class="w-100 d-md-none">
                         </a>
                         <div class="herocontent">
                             <div class="hrone">
                                 <h2>Celebrate with Purpose</h2>
                                 <p class="mb-0 add-moverlay">Make your special moments more meaningful by sharing with us.</p>
-                                <a href="food-distribution-2.html" class="btn-dark btn mt-4">Donate Food<i
+                                <a href="donate.html" class="btn-dark btn mt-4">Donate Food<i
                                 class="fa-solid fa-arrow-right ms-2 "></i></a>
                             </div>
                         </div>
@@ -758,8 +773,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="col-lg-5 text-center text-lg-start ps-lg-5">
                     <h2 class="with-bullets fw-900 d-none d-lg-inline-block">About Us</h2>
-                    <p class="mt-lg-3  text-m-15 fw-medium text-justify">Seva Bharathi Foundation is a compassionate initiative dedicated to providing shelter, education, healthcare, and emotional support to orphans, elderly individuals, and marginalized communities. Our mission is to uplift lives by offering a safe and nurturing environment where the abandoned and underprivileged can find hope and dignity.</p>
-                    <p class="mt-lg-3  text-m-15 fw-medium text-justify">Founded by R. Gopichand Raju, with the support of like-minded individuals, Seva Bharathi Foundation strives to make a meaningful impact through its orphanage, old age home, educational programs, and spiritual initiatives.</p>
+                    <p class="mt-lg-3  text-m-15 fw-medium text-justify">Seva Bharathi Foundation was established on August 15 in memory of Late Rachuri Sai Kumar's birthday and was formally registered in 2024. </p>
+                    <p class="mt-lg-3  text-m-15 fw-medium text-justify">Our founder, Rachuri Gopichand Raju, has been actively involved in social work since 2008, notably during the Kurnool floods, and has continued to work in response to natural disasters in Telangana, Andhra Pradesh, Karnataka, Tamil Nadu, and Kerala.</p>
                     <a href="about-us.html">Read More <i class="fa-solid fa-arrow-right"></i> </a>
                 </div>
             </div>
@@ -811,7 +826,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                    <a href="./Old_Age_Home.html">
                     <div class="col-lg-12">
                       <img
-                        src="./service/22.webp"
+                        src="old3.jpg"
                         class="img-fluid lazyload"
                         alt="Old Age Home"
                         width="401"
@@ -880,7 +895,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <a>
                     <div class="col-lg-12">
                       <img
-                        src="service/goshala.webp"
+                        src="service/goshala.jpg"
                         class="img-fluid lazyload"
                         alt="Spiritual Guidance"
                         width="401"
@@ -1014,7 +1029,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="swiper-whatwesdoslider-bullet swiper-pagination"></div>
         </div>
-      </section>
+    </section>
 
 
     <!-- <section class="section-spacing pb-lg-5">
@@ -1371,7 +1386,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                   </div>
 
-                  <div class="swiper-slide">
+                  <!-- <div class="swiper-slide">
                     <div class="card rounded-4 double-border">
                       <div class="card-body">
                         <div class="row gy-3">
@@ -1397,7 +1412,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
 
 
                   <div class="swiper-slide">
@@ -1480,7 +1495,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="row gy-3">
                           <div class="col-lg-12">
                             <img
-                              src="./service/goshala.webp"
+                              src="./service/goshala.jpg"
                               class="rounded-2 w-100 lazyload"
                               alt="Goshala Initiatives"
                               width="380"
@@ -2296,7 +2311,7 @@ I am very happy to see good service of destitute mother cows in Krishnayan
 
         <li><a href="donation-form.html" class="btn btn-grad-yellow">Donate Now</a></li>
 
-        <li><a href="mailto:care@krishnayangauraksha.org">
+        <li><a href="mailto:info@sevabharathifoundation.com">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="white" />
                     <path
@@ -2315,11 +2330,13 @@ I am very happy to see good service of destitute mother cows in Krishnayan
             </a></li>
     </ul>
 </div>
+
+
   <div id="online-gaushala-visit" class="modal fade" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content body-bg">
-        <form id="live_request_form" onsubmit="return checkValidate_live();">
-        <input type="hidden" name="csrf_test_name" value="507e97488e64af4e612d278199781768">
+        <form method="POST" class="contact-form" id="contactForm">
+        <!-- <input type="hidden" name="csrf_test_name" value="507e97488e64af4e612d278199781768"> -->
           <div class="modal-header">
             <h5 class="modal-title text-center w-100">Register for Online Seva Visit</h5>
             <button class="btn-close" data-bs-dismiss="modal"></button> </div>
@@ -2330,9 +2347,9 @@ I am very happy to see good service of destitute mother cows in Krishnayan
               </div>
               <div class="col-lg-4">
                 <div class="form-floating">
-					                    <input type="hidden" name="data_from" value='Online Live Gaushala Visit'>
+					                    <input type="hidden" name="data_from" value='Book an Event for Donation'>
 
-                  <input type="text" class="form-control" id="live_fname" name="live_fname" value="" placeholder="Full Name" required>
+                  <input type="text" class="form-control" id="fname" value="" placeholder="Full Name" required>
                   <label for="live_fname">Full Name*</label>
                   <small class="text-danger2 error-fullname"></small>
                 </div>
@@ -2340,7 +2357,7 @@ I am very happy to see good service of destitute mother cows in Krishnayan
              
 				  <div class="col-lg-4">
                 <div class="form-floating">
-                  <input type="email" class="form-control" id="live_email" name="live_email" value="" placeholder="Email Address*" required>
+                  <input type="email" class="form-control" id="email" value="" placeholder="Email Address*" required>
                   <label for="live_email">Email Address*</label>
                   <small class="text-danger2 error-email"></small>
                 </div>
@@ -2351,15 +2368,15 @@ I am very happy to see good service of destitute mother cows in Krishnayan
           </div>
           <div class="col-lg-4">
                 <div class="form-floating">
-                  <input type="date" class="form-control" id="visit_date" name="visit_date" value="" placeholder="Visit Date*" required>
+                  <input type="date" class="form-control" id="date" name="visit_date" value="" placeholder="Visit Date*" required>
                   <label for="live_email">Visit Date*</label>
                   <small class="text-danger2 error-visitdate"></small>
                 </div>
           </div>
           <div class="col-lg-4">
                 <div class="form-floating">
-                <select class="form-control" id="visit_time" name="visit_time" required>
-                    <option value="">Select Time</option>
+                <select class="form-control" id="time_slot" name="time_slot" required>
+                    <option disabled selected value="">Select Time</option>
                     <option value="7am - 8am">7am - 8am</option>
                     <option value="8am - 9am">8am - 9am</option>
                     <option value="2pm - 3pm">2pm - 3pm</option>
@@ -2369,29 +2386,59 @@ I am very happy to see good service of destitute mother cows in Krishnayan
                   <label for="live_email">Visit Time*</label>
                   <small class="text-danger2 error-visittime"></small>
                 </div>
-          </div>    
+          </div>  
+
+          <div class="col-lg-4">
+            <div class="form-floating">
+              <select class="form-control" id="reason_event" name="reason_event" required>
+                <option disabled selected value="">Reason for Booking event</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Anniversary">Anniversary</option>
+                <option value="For Family">For Family</option>
+                <option value="Others">Others</option>
+              </select>
+              <label for="live_email">Reason*</label>
+            </div>
+      </div>  
+
+          
+       
              
               <div class="col-lg-12">
                 <div class="form-floating">
-                  <textarea class="form-control" placeholder="message" id="live_message" name="live_message" style="height: 100px"></textarea>
+                  <textarea class="form-control" placeholder="message" id="message" style="height: 100px"></textarea>
                   <label for="live_message">message</label>
                 </div>
               </div>
-              <div class="col-lg-12">
+              <!-- <div class="col-lg-12">
                 <div class="form-group message-btn"> </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="modal-footer justify-content-center">
            
             <input type="hidden" id="livetoken" name="livetoken" />
-            <button type="submit" name="livesubmit" id="livesubmit" class="btn btn-primary text-white"> Submit </button>
+            <div class="btn btn-primary text-white" onclick="sendEmail()"> Submit </div>
           </div>
         </form>
       </div>
     </div>
   </div>
 
+
+
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+  <script type="text/javascript">
+	  (function(){
+		 emailjs.init({
+		   publicKey: "sirqw1Wd1-hD-4U-4",
+		 });
+	  })();
+   </script>
+   <script src="assets/js/email.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 
@@ -2464,7 +2511,7 @@ function googleTranslateElementInit(selectedLang = '') {
         var convt_lang = selectedLang;
         $.ajax({
             type: 'POST',
-            url: "https://www.krishnayangauraksha.org/Contact_Us/lang_session",
+            url: "https://www.sevabharathifoundation.com/contact-us.html",
             data: {
                 "csrf_test_name":'507e97488e64af4e612d278199781768',
                 language: convt_lang
@@ -2539,74 +2586,8 @@ var intervalId = setInterval(function() {
 }, 1000);
 
 // live darshan 
-function checkValidate_live() {
-    var phone_number = document.getElementById('phone');
-    var email = document.getElementById('live_email');
 
-    form = $("#live_request_form").serialize();
-    $.ajax({
-        type: "POST",
-        url: "https://www.krishnayangauraksha.org/live_visit",
-        dataType: "json",
-        data: form,
-        beforeSend: function() {
-            $('#livesubmit').prop('disabled', true);
-            $('#livesubmit').text('wait...');
-        },
-        success: function(response) {
-            $('#livesubmit').prop('disabled', false);
-            $('#livesubmit').text('Submit');
-            if (response.status === "error") 
-            {
-                var count = 0;
-                $.each(response, function(key, value) {
-                    if (key != 'error') {
-                        $("." + key).html(value);
-                        if (count == 0 && value != "") {
-                            $("." + key).parent().find('input').focus()
-                            count++;
-                        }
-                    }
-                });
-            } else {
-                if (response.status === "success")  
-                {
-                    document.getElementById("live_request_form").reset();
-                    $(".text-danger2").html('');
-                    $('#live_status').html(response.msg)
-                } else {
-                    $('#live_status').html(response.msg)
-                }
-            }
-        }
-    });
-    event.preventDefault();
-    return false; //stop the actual form post !important!
-}
-// subscribe footer
-function subscribeUser() {
-    var user_email = $("#user_email").val();
 
-    $.ajax({
-        type: 'POST',
-        dataType: "json",
-        url: 'https://www.krishnayangauraksha.org/subscribe-user',
-        data: {
-            "csrf_test_name":'507e97488e64af4e612d278199781768',
-            'user_email': user_email
-        },
-        beforeSend: function() {
-            $("#footer-subscribe-btn").html('Please wait...').attr("disabled", true);
-        },
-        success: function(data) {
-            $("#footer-subscribe-btn").html('Submit').attr("disabled", false);
-            $("#subscribe-message").html(data.msg);
-            if (data.status == 1) {
-                $("#user_email").val('');
-            }
-        }
-    });
-}
 </script>
 
 
