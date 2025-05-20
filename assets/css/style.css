@@ -1803,3 +1803,29 @@ border-radius: 50px;
     font-size: small;
   }
 }
+
+.btn-cmt{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  /* border: 2px dashed #fff; */
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+    transition: all 0.2s ease;
+}
+.btn-cmt::before{
+  left: 0;
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: #e9ad083f;
+  transition: all 0.2s ease;
+}
+.btn-cmt:hover::before{
+width: 100%;
+}
+
