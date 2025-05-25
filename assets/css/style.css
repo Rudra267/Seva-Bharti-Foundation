@@ -1846,3 +1846,53 @@ width: 100%;
   transform: rotate(45deg);
 }
 
+
+/* translate */
+
+#google_translate_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+     padding: 5px 10px;
+    border-radius: 80px;
+    background-color: white;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    z-index: 1000;
+}
+
+#google_translate_element select {
+
+  border: none;                /* remove black border */
+  font-family: 'arial', sans-serif;  /* clean modern font */
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 25px;         /* pill shape */
+  background-color: white;
+  color: #333;
+  appearance: none;            /* remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+#google_translate_wrapper:hover{
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width:767px){
+
+#google_translate_wrapper{
+    padding: 2px 6px;
+}
+#google_translate_wrapper > img{
+  width: 20px;
+}
+#google_translate_element select {
+  font-size: 12px;
+}
+}
