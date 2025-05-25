@@ -25,3 +25,10 @@ observer.observe(document.body, {
   childList: true,
   subtree: true
 });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const wrapper = document.getElementById("google_translate_wrapper");
+    if (wrapper) {
+      wrapper.setAttribute("title", "Select your language on the home page to use it across the site.");
+    }
+  });
