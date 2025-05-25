@@ -1,25 +1,27 @@
-   window.addEventListener('load', () => {
-    const interval = setInterval(() => {
-      const options = document.querySelectorAll('.goog-te-combo option');
-      if (options.length > 0) {
-        options.forEach(option => {
-          const value = option.value;
-          if (value && value !== 'hi' && value !== 'te') {
-            option.remove(); // remove all except Hindi and Telugu
-          }
-        });
-        clearInterval(interval); // stop checking once done
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+
+// Mutation observer to restrict languages
+const observer = new MutationObserver(function() {
+  const select = document.querySelector("#google_translate_element select");
+  if (select && select.options.length > 2) {
+    // Allowed languages: Hindi and Telugu
+    const allowed = ["hi", "te"];
+    for (let i = select.options.length - 1; i >= 0; i--) {
+      const option = select.options[i];
+      if (!allowed.includes(option.value) && option.value !== '') {
+        select.remove(i);
       }
-    }, 500);
-  });
- 
- function googleTranslateElementInit() {
-    new google.translate.TranslateElement(
-      {
-        pageLanguage: 'en',
-        includedLanguages: 'hi,te', // Intention to limit (Google sometimes ignores this)
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-      },
-      'google_translate_element'
-    );
+    }
+    
   }
+});
+
+observer.observe(document.body, {
+  childList: true,
+  subtree: true
+});
