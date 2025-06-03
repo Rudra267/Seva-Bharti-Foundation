@@ -1,3 +1,4 @@
+
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
     pageLanguage: 'en',
@@ -32,3 +33,35 @@ observer.observe(document.body, {
       wrapper.setAttribute("title", "Select your language on the home page to use it across the site.");
     }
   });
+
+
+
+  
+
+  function customSlider(){
+   const slides = document.getElementById("slideTrack");
+  const totalSlides = slides.children.length;
+  let currentIndex = 0;
+
+  function updateSlider() {
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlider();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSlider();
+  }
+
+  // Auto-slide every 6 seconds
+  setInterval(nextSlide, 6000);
+}
+
+customSlider()
+
+
+

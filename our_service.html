@@ -500,87 +500,132 @@
        
     </ul>
 </div>
+<button id="bookEventBtn" onclick="toggleForm()">Book an Event 👈</button>
+<script>
+    window.addEventListener('scroll', function () {
+    const btn = document.getElementById('bookEventBtn');
+    if (window.scrollY > 300) { // Show after scrolling 300px
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  });
 
+  function toggleForm() {
+    // Replace this with actual form toggle logic
+    alert("Form toggle triggered!");
+  }
+
+</script>
 
 <footer class="bg-dark text-white py-5">
-  <div class="container">
-    <div class="row gy-4">
-      
-      <!-- Address & Contact Details -->
-      <div class="col-lg-4" style="line-height: 31px;">
-        <h5>Contact Us</h5>
-        <ul class="list-unstyled list-cmt">
-          <li>
-            <img src="https://docs.krishnayangauraksha.org/donation_page/images/map.svg" width="15" height="20" alt="Location Icon">
-            PLOT NO 288/P 
-            Beside : Beauty green resorts,
-            Sultanpally, Shamshabad, Hyderabad,Telangana -501218
-          </li>
-          <li>
-            <a href="mailto:sevabharathifoundaition@gmail.com" class="text-white text-decoration-none">
-              <img src="https://docs.krishnayangauraksha.org/donation_page/images/mail.svg" width="15" height="15" alt="Email Icon">
-              info@sevabharathifoundation.com
-            </a>
-          </li>
-          <li>
-            <a href="tel:+919666150111" class="text-white text-decoration-none">
-              <img src="https://docs.krishnayangauraksha.org/donation_page/images/phone.svg" width="15" height="15" alt="Phone Icon">
-              +91 9666150111 / +91 8886868229
-            </a>
-          </li>
-        </ul>
-        <h5>Follow us on</h5>
-        <div class="d-flex gap-3">
-          <a href="https://www.facebook.com/sevabharathifoundation?mibextid=wwXIfr&rdid=5xPaABaaHSXinCtj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15eEB8stVP%2F%3Fmibextid%3DwwXIfr" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/sevabharathifoundation" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.youtube.com/@Sevabharathifoundation" class="text-white fs-4"><i class="fab fa-youtube"></i></a>
-          <a href="https://x.com/sevabharathi_/status/1902397227215286440" class="text-white fs-4"><i class="fab fa-x-twitter"></i></a>
+    <div class="container">
+      <div class="row gy-4">
+        
+        <!-- Address & Contact Details -->
+        <div class="col-lg-4" style="line-height: 31px;">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled list-cmt">
+            <li>
+              <img src="https://docs.krishnayangauraksha.org/donation_page/images/map.svg" width="15" height="20" alt="Location Icon">
+              PLOT NO 288/P 
+              Beside : Beauty green resorts,
+              Sultanpally, Shamshabad, Hyderabad,Telangana -501218
+            </li>
+            <li>
+              <a href="mailto:sevabharathifoundaition@gmail.com" class="text-white text-decoration-none">
+                <img src="https://docs.krishnayangauraksha.org/donation_page/images/mail.svg" width="15" height="15" alt="Email Icon">
+                info@sevabharathifoundation.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+919666150111" class="text-white text-decoration-none">
+                <img src="https://docs.krishnayangauraksha.org/donation_page/images/phone.svg" width="15" height="15" alt="Phone Icon">
+                +91 9666150111 / +91 8886868229
+              </a>
+            </li>
+          </ul>
+
         </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="col-lg-4">
-        <h5>Quick Links</h5>
-        <ul class="list-unstyled list-cmt">
-          <li><a href="./index.html" class="text-white text-decoration-none">Home</a></li>
-          <!-- <li><a href="./about-us.html" class="text-white text-decoration-none">About Us</a></li> -->
-          <li><a href="./our_service.html" class="text-white text-decoration-none">Our Service</a></li>
-          <li><a href="./Be_a_Volunteer.html" class="text-white text-decoration-none">Be a Volunteer</a></li>
-          <li><a href="./gallery.html" class="text-white text-decoration-none">Gallery</a></li>
-          <li><a href="./donate.html" class="text-white text-decoration-none">Donate</a></li>
-          <li><a href="./contact-us.html" class="text-white text-decoration-none">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Newsletter & Apps -->
-      <div class="col-lg-4">
-        <!-- <h5>Subscribe to Our Newsletter</h5>
-        <form method="post" class="d-flex">
-          <input type="email" name="user_email" class="form-control me-2" placeholder="Your Email" required>
-          <button type="submit" class="btn btn-primary">Join Us</button>
-        </form> -->
-        <div>
-          <h5>Download Our App</h5>
-          <div class="d-flex gap-3">
-            <a href="https://bit.ly/2KR8VoE" target="_blank">
-              <img src="https://www.krishnayangauraksha.org/new-assets/images/googleplay.svg" width="130" alt="Google Play">
-            </a>
-            <a href="https://apps.apple.com/in/app/krishnayan/id1544026432" target="_blank">
-              <img src="https://www.krishnayangauraksha.org/new-assets/images/appstore.svg" width="130" alt="App Store">
-            </a>
+  
+        <!-- Quick Links -->
+        <div class="col-lg-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled list-cmt">
+            <li><a href="./index.html" class="text-white text-decoration-none">Home</a></li>
+            <!-- <li><a href="./about-us.html" class="text-white text-decoration-none">About Us</a></li> -->
+            <li><a href="./our_service.html" class="text-white text-decoration-none">Our Service</a></li>
+            <li><a href="./Be_a_Volunteer.html" class="text-white text-decoration-none">Be a Volunteer</a></li>
+            <li><a href="./gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+            <li><a href="./donate.html" class="text-white text-decoration-none">Donate</a></li>
+            <li><a href="./contact-us.html" class="text-white text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Newsletter & Apps -->
+        <div class="col-lg-4">
+          <!-- <h5>Subscribe to Our Newsletter</h5>
+          <form method="post" class="d-flex">
+            <input type="email" name="user_email" class="form-control me-2" placeholder="Your Email" required>
+            <button type="submit" class="btn btn-primary">Join Us</button>
+          </form> -->
+          <div>
+            <h5>Follow Us</h5>
+            <div class="d-flex gap-3">
+               <a href="https://www.facebook.com/sevabharathifoundation?mibextid=wwXIfr&rdid=5xPaABaaHSXinCtj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15eEB8stVP%2F%3Fmibextid%3DwwXIfr" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/sevabharathifoundation" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@Sevabharathifoundation" class="text-white fs-4"><i class="fab fa-youtube"></i></a>
+            <a href="https://x.com/sevabharathi_/status/1902397227215286440" class="text-white fs-4"><i class="fab fa-x-twitter"></i></a>
+            </div>
           </div>
         </div>
+  
       </div>
-
+  
+      <!-- Copyright -->
+      <div class="text-center pt-4 mt-4 border-top border-light">
+        <p class="mb-0"><a style="color: #fff;" target="_blank" href="https://www.vgswebservices.com/">© Design by Virtuous Gobal Solution 2025  All Rights Reserved.</a> </p>
+      </div>
     </div>
-
-    <!-- Copyright -->
-    <div class="text-center pt-4 mt-4 border-top border-light">
-      <p class="mb-0"><a style="color: #fff;" target="_blank" href="https://www.vgswebservices.com/">© Design by Virtuous Gobal Solution 2025  All Rights Reserved.</a> </p>
-    </div>
-  </div>
 </footer>
     
+<ul class="newsharepanel">
+    
+    <li data-bs-toggle="modal" data-bs-target="#socialmodal">
+        <div class="" data-bs-toggle="tooltip" data-bs-title="Share us"><i style="color: #000000;" class="fa-regular fa-share-from-square"></i></div>
+        
+    </li>
+    <li data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+        data-bs-title="Join Our Whatsapp Channel"><a href="https://wa.me/9666150111?text=Hello%20Seva%20Bharathi%20Foundation%2C%20I%20would%20like%20to%20know%20more%20about%20your%20work." target="_blank"><i style="color: #059102;" class="fa-brands fa-whatsapp"></i></a></li>
+
+            
+             
+</ul>
+
+<div class="modal fade" id="socialmodal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close btn-close2" data-bs-dismiss="modal"></button>
+                <p class="text-center">Each share of yours will bring happiness to mother cows </p>
+                <ul class="modalshareicons">
+
+
+          
+
+
+
+                    <li> <a href="https://www.facebook.com/sevabharathifoundation?mibextid=wwXIfr&rdid=5xPaABaaHSXinCtj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15eEB8stVP%2F%3Fmibextid%3DwwXIfr"
+                            target="_blank"> <i style="font-size: 30px;" class="fab fa-facebook"></i> </a> </li>
+                    <li><a href="https://x.com/sevabharathi_/status/1902397227215286440" target="_blank"><i style="font-size: 30px;" class="fab fa-x-twitter"></i></a></a></li>
+                    <li><a href="https://www.instagram.com/sevabharathifoundation" target="_blank"> <i style="font-size: 30px;" class="fab fa-instagram"></i> </a></li>
+                    <li><a href="https://www.youtube.com/@Sevabharathifoundation"
+                            target="_blank"> <i style="font-size: 30px;" class="fab fa-youtube"></i> </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
     
 
 <script type="text/javascript"
@@ -599,10 +644,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
  
     <!-- Bootstrap Icons & FontAwesome -->
   <script src="https://kit.fontawesome.com/b4564537dc.js" crossorigin="anonymous"></script>    
-    <div id="google_translate_wrapper">
-  <img src="./google.png" width="30" alt="Google logo" />
-  <div id="google_translate_element"></div>
-</div>
+
 <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="./assets/js/translate.js"></script>
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

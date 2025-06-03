@@ -424,6 +424,37 @@
 
     </section>
 
+        <div class="slider-container">
+  <div class="slides" id="slideTrack">
+    <div class="slide">
+      <img src="./Gallery/inaguration8.jpg" alt="Helping Hands" />
+      <div class="caption">
+        <h2>Leaders & Well-Wishers Grace the Occasion</h2>
+        <!-- <p>Esteemed guests and supporters gather to celebrate the launch of a mission-driven home for service and care.</p> -->
+      </div>
+    </div>
+    <div class="slide">
+      <img src="./Gallery/inaguration9.jpg" alt="Donation for Kids" />
+      <div class="caption">
+        <h2>Seva Bharathi Foundation – A New Chapter Begins</h2>
+        <!-- <p>Grand inauguration of the new campus marked with unity, tradition, and community spirit in Shadnagar.</p> -->
+      </div>
+    </div>
+    <div class="slide">
+      <img src="./Gallery/20.jpeg" alt="Volunteer Work" />
+      <div class="caption">
+        <h2>Tradition Meets Purpose</h2>
+        <!-- <p>Ceremonial rituals and blessings mark a hopeful beginning for the foundation’s expanded service to the community.</p> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="nav-buttons">
+    <button onclick="prevSlide()">❮</button>
+    <button onclick="nextSlide()">❯</button>
+  </div> -->
+</div>
+
 
 
     <section class="section-spacing bg-light pb-5 pt-5 volunteer bg-primary-5">
@@ -1343,7 +1374,23 @@
   
       </section>
   
+<button id="bookEventBtn" onclick="toggleForm()">Book an Event 👈</button>
+<script>
+    window.addEventListener('scroll', function () {
+    const btn = document.getElementById('bookEventBtn');
+    if (window.scrollY > 300) { // Show after scrolling 300px
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  });
 
+  function toggleForm() {
+    // Replace this with actual form toggle logic
+    alert("Form toggle triggered!");
+  }
+
+</script>
 
 <footer class="bg-dark text-white py-5">
     <div class="container">
@@ -1372,13 +1419,7 @@
               </a>
             </li>
           </ul>
-          <h5>Follow us on</h5>
-          <div class="d-flex gap-3">
-            <a href="https://www.facebook.com/sevabharathifoundation?mibextid=wwXIfr&rdid=5xPaABaaHSXinCtj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15eEB8stVP%2F%3Fmibextid%3DwwXIfr" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/sevabharathifoundation" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@Sevabharathifoundation" class="text-white fs-4"><i class="fab fa-youtube"></i></a>
-            <a href="https://x.com/sevabharathi_/status/1902397227215286440" class="text-white fs-4"><i class="fab fa-x-twitter"></i></a>
-          </div>
+
         </div>
   
         <!-- Quick Links -->
@@ -1403,14 +1444,12 @@
             <button type="submit" class="btn btn-primary">Join Us</button>
           </form> -->
           <div>
-            <h5>Download Our App</h5>
+            <h5>Follow Us</h5>
             <div class="d-flex gap-3">
-              <a href="https://bit.ly/2KR8VoE" target="_blank">
-                <img src="https://www.krishnayangauraksha.org/new-assets/images/googleplay.svg" width="130" alt="Google Play">
-              </a>
-              <a href="https://apps.apple.com/in/app/krishnayan/id1544026432" target="_blank">
-                <img src="https://www.krishnayangauraksha.org/new-assets/images/appstore.svg" width="130" alt="App Store">
-              </a>
+               <a href="https://www.facebook.com/sevabharathifoundation?mibextid=wwXIfr&rdid=5xPaABaaHSXinCtj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15eEB8stVP%2F%3Fmibextid%3DwwXIfr" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/sevabharathifoundation" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@Sevabharathifoundation" class="text-white fs-4"><i class="fab fa-youtube"></i></a>
+            <a href="https://x.com/sevabharathi_/status/1902397227215286440" class="text-white fs-4"><i class="fab fa-x-twitter"></i></a>
             </div>
           </div>
         </div>
@@ -1447,29 +1486,42 @@
     </ul>
 </div>
 
-<div class="offcanvas offcanvas-start" tabindex="-1" id="adoptcanvas">
-  <div class="offcanvas-header bg-primary">
-      <a href="index.html" class="offcanvas-title text-white "> <img
-              src="new-assets/images/logo1.png" class="me-2" width="50"
-              alt="">Shree Krishnayan Gaushala</a>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-      <div class="menu-list">
-          <ul id="menu-content" class="menu-content">
+<ul class="newsharepanel">
+    
+    <li data-bs-toggle="modal" data-bs-target="#socialmodal">
+        <div class="" data-bs-toggle="tooltip" data-bs-title="Share us"><i style="color: #000000;" class="fa-regular fa-share-from-square"></i></div>
+        
+    </li>
+    <li data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+        data-bs-title="Join Our Whatsapp Channel"><a href="https://wa.me/9666150111?text=Hello%20Seva%20Bharathi%20Foundation%2C%20I%20would%20like%20to%20know%20more%20about%20your%20work." target="_blank"><i style="color: #059102;" class="fa-brands fa-whatsapp"></i></a></li>
 
-              <li class=""> <a href="./ourmission.html"><i
-                          class="fa-solid fa-circle"></i>Our Mission</a></li>
-              <li class=""> <a href="ourfounder.html"><i
-                          class="fa-solid fa-circle"></i>Our Founder</a></li>
-              <!-- <li class=""> <a href="https://gwala.krishnayangauraksha.org/Donor/ExtraActivity"><i
-                          class="fa-solid fa-circle"></i>Extra Activity</a></li> -->
+            
+             
+</ul>
 
-          </ul>
+<div class="modal fade" id="socialmodal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close btn-close2" data-bs-dismiss="modal"></button>
+                <p class="text-center">Each share of yours will bring happiness to mother cows </p>
+                <ul class="modalshareicons">
 
 
-      </div>
-  </div>
+          
+
+
+
+                    <li> <a href="https://www.facebook.com/sevabharathifoundation?mibextid=wwXIfr&rdid=5xPaABaaHSXinCtj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15eEB8stVP%2F%3Fmibextid%3DwwXIfr"
+                            target="_blank"> <i style="font-size: 30px;" class="fab fa-facebook"></i> </a> </li>
+                    <li><a href="https://x.com/sevabharathi_/status/1902397227215286440" target="_blank"><i style="font-size: 30px;" class="fab fa-x-twitter"></i></a></a></li>
+                    <li><a href="https://www.instagram.com/sevabharathifoundation" target="_blank"> <i style="font-size: 30px;" class="fab fa-instagram"></i> </a></li>
+                    <li><a href="https://www.youtube.com/@Sevabharathifoundation"
+                            target="_blank"> <i style="font-size: 30px;" class="fab fa-youtube"></i> </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
     
     
@@ -1490,10 +1542,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
  
     <!-- Bootstrap Icons & FontAwesome -->
   <script src="https://kit.fontawesome.com/b4564537dc.js" crossorigin="anonymous"></script>    
-    <div id="google_translate_wrapper">
-  <img src="./google.png" width="30" alt="Google logo" />
-  <div id="google_translate_element"></div>
-</div>
+
 <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="./assets/js/translate.js"></script>
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
