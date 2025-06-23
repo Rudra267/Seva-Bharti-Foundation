@@ -1449,15 +1449,143 @@ border-radius: 50px;
 
 
 /* Contact Section */
-.contact-section {
-  width: 90%;
-  max-width: 500px;
-  margin: 50px auto;
-  background: #fff3e6; /* Soft peachy color */
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.contact-sec{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 2rem;
+  background: #fff7ee;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-wrapper,
+.contact-details {
+  flex: 1 1 40%;
+}
+
+.contact-details {
+  background: #fff3e6;
+  padding: 1.5rem;
+  border-radius: 12px;
+  font-family: sans-serif;
+  color: #5a2e00;
+  font-size: 1rem;
+}
+
+.contact-title {
+  text-align: center;
+  color: #d35400;
+  margin-bottom: 1.5rem;
+}
+
+/* .cmt-box {
+  display: flex;
+  align-items: center;
+  background: #fff9f2;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  gap: 10px;
+} */
+
+.icon-box {
+  background-color: #fce5d0;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box i {
+  color: #d35400;
+  font-size: 1.1rem;
+}
+
+.cmt-box {
+  display: flex;
+  align-items: center;
+  background: #fff9f2;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  gap: 10px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+.cmt-box a {
+  color: #d35400;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.4;
+  display: inline-block;
+
+}
+
+
+.cmt-box a,
+.cmt-box span.address {
+  color: #d35400;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+
+
+/* Tablet View (max-width: 991px) */
+@media (max-width: 991px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-form-wrapper,
+  .contact-details {
+    width: 100%;
+  }
+}
+
+/* Mobile View (max-width: 576px) */
+@media (max-width: 576px) {
+  .contact-title {
+    font-size: 1.4rem;
+  }
+
+  .cmt-box {
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+
+  .cmt-box .icon {
+    font-size: 1.1rem;
+    margin-top: 4px;
+  }
+
+  .cmt-box a,
+  .cmt-box span.address {
+    font-size: 0.95rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
 
 /* Title & Subtitle */
 .contact-title {
