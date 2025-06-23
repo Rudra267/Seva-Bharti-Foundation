@@ -2185,3 +2185,10 @@ bookevent */
   background-color: #e64a19;
   transform: scale(1.05);
 }
+
+@media (max-width:767px){
+.newsharepanel li:last-child i {
+  font-size: 18px !important;
+}
+
+}
